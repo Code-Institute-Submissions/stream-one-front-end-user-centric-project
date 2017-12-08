@@ -1,1 +1,138 @@
 /**/
+@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:300,300i,400,400i,500,500i,600,600i,700,700i|Barlow+Semi+Condensed:300,300i,400,400i,500,500i,600,600i,700,700i|Hind+Vadodara:300,400,500,600,700|Khand:400,500,600,700");
+
+
+/*------------------------------ GLOBAL LAYOUT ---------------------------------------*/
+
+.header-layout,
+.header-title-layout,
+.section-layout {
+    
+    padding: 0px;
+}
+
+
+.main-page-media {
+    
+    margin: 0px;
+}
+
+.main-page-icon {
+    
+    padding: 0px;
+}
+
+
+
+/*------------------------------ MEDIA ---------------------------------------*/
+
+/*------------------------------ BACKGROUND IMAGES -----------------------------*/
+
+.background-image {
+    
+    /*background-color: #646a72;*/
+    background-image: url("../images/Background-Image-Optimized-667-375.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* ----------------------------- VIDEO AND AUDIO ------------------------------*/
+
+.video-responsive-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0px;
+    height: 0;
+    overflow: hidden;
+    border: 0px;
+    }
+    
+.video-responsive-container iframe {
+    
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+    
+}
+
+.audio-responsive-container {
+    position: relative;
+    padding-bottom: 20%;
+    padding-top: 0px;
+    height: 0;
+    overflow: hidden;
+    border: 0px;
+    }
+    
+.audio-responsive-container audio {
+    
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    
+}
+
+
+.video-clip {
+
+}
+
+.audio-clip {
+    
+    border-radius: 10px;
+    
+    
+}
+
+
+/* ----------------------------- ICONS --------------------------------------*/
+
+
+.video-icon {
+    
+ background: url("../images/tv_straight_yellow-60px-mobile.png");
+ background-position: center;
+ background-repeat: no-repeat;
+ /*background-color: #000;*/
+ min-height: 151px;
+
+    
+}
+
+
+.audio-icon {
+    
+ background: url("../images/speaker_yellow_50px_mobile.png");
+ background-position: center;
+ background-repeat: no-repeat;
+ min-height: 151px;
+    
+    
+}
+
+/*-------------------------------- END OF MEDIA ----------------------------*/
+
+/*-------------------------------- HEADER ----------------------------------*/
+
+.main-heading {
+    
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px ;
+    
+}
+
+.main-heading .header-bold {
+    
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 700;
+    
+}
