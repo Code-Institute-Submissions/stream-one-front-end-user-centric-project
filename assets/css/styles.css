@@ -25,12 +25,16 @@
 
 }
 
-.section-layout {
+.video-section-layout {
 
     height: 88vh;
     width: 100vw;
 }
 
+.audio-section-layout {
+
+    
+}
 
 
 
@@ -55,19 +59,32 @@
 
     /*background-color: #646a72;*/
     background-image: url("../images/Background-Image-Optimized-960-540.jpg");
-    background-position: center;
+    background-position: 50% 0%;
+    
     background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding:0;
+    margin: 0;
+    
+
+}
+
+.audio-background {
+    
+    background-image: url("../images/fader-background-960-540-mobile.jpg");
+    background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100%;
     padding: 0px;
     margin: 0px;
-
 }
 
 
 /* ----------------------------- VIDEO AND AUDIO ------------------------------*/
 
-/*---- main page responsive embed --------------------*/
+
 
 /*.media-container-row {
 
@@ -75,10 +92,7 @@
     padding: 0;
     margin: 0;
 }*/
-.all-video-wrapper {
-    
-    
-}
+
 video-wrapper {
     
     padding-bottom: 15px;
@@ -98,8 +112,6 @@ video-wrapper {
     display: block;
     overflow: hidden;
    
-    
-
 }
 
 
@@ -161,38 +173,41 @@ video-wrapper {
     
     padding: 45px 0px 15px 0px;
    
-    
-    
 }
 
 
 
 .video-icon {
 
-    /*background-image: url("../images/tv_straight_white_31by41.png");*/
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        
+}
+
+.audio-icon-container {
+    
+    padding: 45px 0px 0px 0px;
+   
+}
+
+.audio-icon {
+
             position: relative;
             left: 50%;
             transform: translateX(-50%);
             
-
-    /*background-color: #000;*/
-
-    
-
-
-
 }
 
-
-.audio-icon {
-
-    background: url("../images/speaker_yellow_50px_mobile.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 151px;
-
-
-
+.audio-player {
+    
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 12px;
+    height: 30px;
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
 
 
@@ -222,10 +237,7 @@ video-wrapper {
     
     color: #8d8d8d ;
 }
-.heading-not-bold {
-    
-    
-}
+
 .main-heading .heading-bold {
 
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -251,6 +263,7 @@ video-wrapper {
     /*width: 100vw;*/
     margin: 0 auto;
     padding-top: 5px;
+   
 }
 
 .nav-links {
@@ -258,7 +271,7 @@ video-wrapper {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 300;
     letter-spacing: 0.5px;
-    font-size: 12px;
+    font-size: 13px;
     list-style: none;
     margin-bottom: 5px;
     margin-top: 0px;
@@ -291,7 +304,7 @@ video-wrapper {
 
 }
 
-/*-------------------------------- SECTION ----------------------------------*/
+/*-------------------------------- VIDEO SECTION ----------------------------------*/
 
 .video-title-container {
 
@@ -303,7 +316,7 @@ video-wrapper {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-    font-size: 10px;
+    font-size: 12px;
     margin-bottom: 6px;
     text-align: center;
     color: #d4d4d4;
@@ -318,7 +331,7 @@ video-wrapper {
     left: 50%;
     padding-top: 80px;
     transform: translateX(-50%);
-    font-weight: normal;
+    
     
 } 
 
@@ -327,7 +340,24 @@ video-wrapper {
     margin-top: 0px;
     margin-bottom: 5px;
     width: 100%;
-    border-color: rgba(255, 255, 255,0.5);
+    border-color: rgba(0, 0, 0, 0);
     
 }
 
+/*-------------------------------- AUDIO SECTION ----------------------------------*/
+
+.audio-reel-title {
+    
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-bottom: 6px;
+    text-align: center;
+    color: #000;
+}
+
+.audio-title-container {
+    
+   /* padding-top: 10px;*/
+}
