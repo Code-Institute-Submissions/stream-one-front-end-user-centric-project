@@ -5,6 +5,11 @@
 
 /*------------------------------ GLOBAL LAYOUT ---------------------------------------*/
 
+.header {
+    
+    padding: 0;
+}
+
 .header-layout {
 
     margin: 0;
@@ -33,25 +38,26 @@
 
 /*------------------------------ MEDIA ---------------------------------------*/
 
-.main-page-media {
+/*.main-page-media {
 
     margin: 0px;
-}
+}*/
 
-.main-page-icon {
+/*.main-page-icon {
 
     padding: 0px;
 }
-
+*/
 
 /*------------------------------ BACKGROUND IMAGES -----------------------------*/
 
 .background-image {
 
     /*background-color: #646a72;*/
-    background-image: url("../images/Background-Image-Optimized-667-375.jpg");
+    background-image: url("../images/Background-Image-Optimized-960-540.jpg");
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     height: 100%;
     padding: 0px;
     margin: 0px;
@@ -63,14 +69,20 @@
 
 /*---- main page responsive embed --------------------*/
 
-.media-container-row {
+/*.media-container-row {
 
     width: 100vw;
     padding: 0;
     margin: 0;
+}*/
+.all-video-wrapper {
+    
+    
 }
-
-.video-wrapper {}
+video-wrapper {
+    
+    padding-bottom: 15px;
+}
 
 .video-aspect {
 
@@ -80,11 +92,13 @@
 .video-responsive-container {
 
     position: relative;
-    padding-tOp: 0px;
+    padding-top: 0px;
     padding-left: 0px;
-    height: 0;
+    
     display: block;
     overflow: hidden;
+   
+    
 
 }
 
@@ -99,22 +113,11 @@
     top: 0;
     width: 100%;
     height: 100%;
-
-
-}
-
-.video-clip-one
-    {
-
-    padding-right: 0px;
-}
-
-.video-clip-two
-    {
-        
     padding-left: 0px;
+    padding-right: 0px;
 
 }
+
 
 
 
@@ -154,25 +157,27 @@
 
 /* ----------------------------- ICONS --------------------------------------*/
 
-.video-icon-container-layout {
-
-    padding-top: 30px;
-    padding-bottom: 15px;
-    padding-right: 0px;
-    padding-left:0px;
-
+.video-icon-container {
+    
+    padding: 45px 0px 15px 0px;
+   
+    
+    
 }
 
 
 
 .video-icon {
 
-    background-image: url("../images/tv_straight_white_31by41.png");
+    /*background-image: url("../images/tv_straight_white_31by41.png");*/
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            
 
     /*background-color: #000;*/
-    height: 82px;
-    background-repeat: no-repeat;
-    background-position: center;
+
+    
 
 
 
@@ -190,10 +195,18 @@
 
 }
 
+
+
+
 /*-------------------------------- END OF MEDIA ----------------------------*/
 
 /*-------------------------------- HEADER ----------------------------------*/
 
+.main-heading-background-color {
+    
+    background-color: rgba(255,255,255,0.8);
+    
+}
 .main-heading {
 
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -202,22 +215,33 @@
     font-size: 16px;
     margin-bottom: 6px;
     text-align: center;
-    /*border: 0.5px solid black;*/
+   
 }
 
-.main-heading .header-bold {
+.heading-seperate {
+    
+    color: #8d8d8d ;
+}
+.heading-not-bold {
+    
+    
+}
+.main-heading .heading-bold {
 
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 700;
-
+    
 }
 
-.header-title-layout hr {
+
+
+.header-spacer {
 
     margin-top: 0px;
     margin-bottom: 5px;
-    max-width: 50px;
-    border-top: 0.5px solid #d7d7d7;
+    max-width: 150px;
+    border-top: 0.5px solid #8d8d8d;
+
 }
 
 
@@ -240,6 +264,8 @@
     margin-top: 0px;
     padding-left: 0px;
     text-align: center;
+    
+    
     /*margin: 0 auto;*/
 }
 
@@ -253,7 +279,7 @@
 .link-item {
 
     text-decoration: none;
-    color: #000;
+    color: #d4d4d4;
 
 
 }
@@ -280,6 +306,28 @@
     font-size: 10px;
     margin-bottom: 6px;
     text-align: center;
-    color: #fff;
+    color: #d4d4d4;
     /*border: 0.5px solid black;*/
 }
+
+.down-arrow {
+    
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 60px;
+    position: relative;
+    left: 50%;
+    padding-top: 80px;
+    transform: translateX(-50%);
+    font-weight: normal;
+    
+} 
+
+.icon-spacer {
+    
+    margin-top: 0px;
+    margin-bottom: 5px;
+    width: 100%;
+    border-color: rgba(255, 255, 255,0.5);
+    
+}
+
