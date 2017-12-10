@@ -27,6 +27,12 @@
 }
 
 
+
+
+
+
+/*------------------------------ MEDIA ---------------------------------------*/
+
 .main-page-media {
 
     margin: 0px;
@@ -37,9 +43,6 @@
     padding: 0px;
 }
 
-
-
-/*------------------------------ MEDIA ---------------------------------------*/
 
 /*------------------------------ BACKGROUND IMAGES -----------------------------*/
 
@@ -58,28 +61,26 @@
 
 /* ----------------------------- VIDEO AND AUDIO ------------------------------*/
 
+/*---- main page responsive embed --------------------*/
 
+.media-container-row {
 
-
-
-
-
-/*-------------------------------- MANUAL EMBED REPONSIVE ----------------------------------*/
-
-
-.video-wrapper {
-    
-   padding-right: 0;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
 }
+
+.video-wrapper {}
+
 .video-aspect {
 
     padding-bottom: 56.25%;
 }
 
 .video-responsive-container {
-    position: relative;
 
-    padding-top: 0px;
+    position: relative;
+    padding-tOp: 0px;
     padding-left: 0px;
     height: 0;
     display: block;
@@ -91,12 +92,9 @@
 
 
 .video-clip-one,
-.video-clip-two,
-.video-clip-three,
-.video-clip-four,
-.video-clip-five,
-.video-clip-six {
-
+.video-clip-two
+    {
+        
     position: absolute;
     top: 0;
     width: 100%;
@@ -105,21 +103,20 @@
 
 }
 
-.video-one-row-one-wrapper,
-.video-three-row-two-wrapper,
-.video-five-row-three-wrapper {
+.video-clip-one
+    {
 
-    padding-right: 0;
+    padding-right: 0px;
 }
 
-.video-two-row-one-wrapper,
-.video-four-row-two-wrapper,
-.video-six-row-three-wrapper {
+.video-clip-two
+    {
+        
+    padding-left: 0px;
 
-    padding-right: 0;
-
-    
 }
+
+
 
 /*
 
@@ -161,6 +158,8 @@
 
     padding-top: 30px;
     padding-bottom: 15px;
+    padding-right: 0px;
+    padding-left:0px;
 
 }
 
@@ -195,15 +194,12 @@
 
 /*-------------------------------- HEADER ----------------------------------*/
 
-.header-color {}
-
-
 .main-heading {
 
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 300;
     letter-spacing: 1px;
-    font-size: 1.2em;
+    font-size: 16px;
     margin-bottom: 6px;
     text-align: center;
     /*border: 0.5px solid black;*/
@@ -266,3 +262,24 @@
 .link-item:focus {
 
     text-decoration: none;
+
+}
+
+/*-------------------------------- SECTION ----------------------------------*/
+
+.video-title-container {
+
+    padding-bottom: 5px;
+}
+
+.video-title {
+
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 10px;
+    margin-bottom: 6px;
+    text-align: center;
+    color: #fff;
+    /*border: 0.5px solid black;*/
+}
