@@ -60,7 +60,7 @@
     /*background-color: #646a72;*/
     background-image: url("../images/Background-Image-Optimized-960-540.jpg");
     background-position: 50% 0%;
-    
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -219,7 +219,7 @@ video-wrapper {
 
 .main-heading-background-color {
     
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,1);
     
 }
 .main-heading {
@@ -230,6 +230,7 @@ video-wrapper {
     font-size: 16px;
     margin-bottom: 6px;
     text-align: center;
+    
    
 }
 
@@ -301,6 +302,7 @@ video-wrapper {
 .link-item:focus {
 
     text-decoration: none;
+    color: #d4d4d4;
 
 }
 
@@ -325,11 +327,11 @@ video-wrapper {
 
 .down-arrow {
     
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.9);
     font-size: 60px;
     position: relative;
     left: 50%;
-    padding-top: 80px;
+    padding-top: 30px;
     transform: translateX(-50%);
     
     
@@ -339,8 +341,8 @@ video-wrapper {
     
     margin-top: 0px;
     margin-bottom: 5px;
-    width: 100%;
-    border-color: rgba(0, 0, 0, 0);
+    width: 75%;
+    border-color: #d4d4d4;
     
 }
 
