@@ -6,7 +6,7 @@
 /*------------------------------ GLOBAL LAYOUT ---------------------------------------*/
 
 .header {
-    
+
     padding: 0;
 }
 
@@ -19,9 +19,9 @@
 
 
 .header-title-layout,
-.section-layout {
+.video-section-layout {
 
-    padding: 0px;
+    padding: 0;
 
 }
 
@@ -31,13 +31,13 @@
     width: 100vw;
 }
 
-.audio-section-layout {
+.audio-section-layout {}
 
-    
+
+. footer-layout {
+
+    padding: 0;
 }
-
-
-
 
 
 /*------------------------------ MEDIA ---------------------------------------*/
@@ -64,14 +64,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-    padding:0;
+    padding: 0;
     margin: 0;
-    
+
 
 }
 
 .audio-background {
-    
+
     background-image: url("../images/fader-background-960-540-mobile.jpg");
     background-size: contain;
     background-position: center;
@@ -84,17 +84,8 @@
 
 /* ----------------------------- VIDEO AND AUDIO ------------------------------*/
 
-
-
-/*.media-container-row {
-
-    width: 100vw;
-    padding: 0;
-    margin: 0;
-}*/
-
 video-wrapper {
-    
+
     padding-bottom: 15px;
 }
 
@@ -108,22 +99,22 @@ video-wrapper {
     position: relative;
     padding-top: 0px;
     padding-left: 0px;
-    
+    height: auto;
+    max-width: 100%;
     display: block;
     overflow: hidden;
-   
+
 }
 
 
 
 
 .video-clip-one,
-.video-clip-two
-    {
-        
+.video-clip-two {
+
     position: absolute;
     top: 0;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     padding-left: 0px;
     padding-right: 0px;
@@ -167,40 +158,40 @@ video-wrapper {
 }
 
 
-/* ----------------------------- ICONS --------------------------------------*/
+/* ----------------------------- CUSTOM ICONS --------------------------------------*/
 
 .video-icon-container {
-    
+
     padding: 45px 0px 15px 0px;
-   
+
 }
 
 
 
 .video-icon {
 
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-        
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
 
 .audio-icon-container {
-    
+
     padding: 45px 0px 0px 0px;
-   
+
 }
 
 .audio-icon {
 
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-            
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
 
 .audio-player {
-    
+
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -217,11 +208,24 @@ video-wrapper {
 
 /*-------------------------------- HEADER ----------------------------------*/
 
-.main-heading-background-color {
-    
-    background-color: rgba(255,255,255,1);
-    
+.main-heading a {
+
+    color: #000;
 }
+
+.main-heading a:hover,
+.main-heading a:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+
+.main-heading-background-color {
+
+    background-color: rgba(255, 255, 255, 1);
+
+}
+
 .main-heading {
 
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -230,20 +234,20 @@ video-wrapper {
     font-size: 16px;
     margin-bottom: 6px;
     text-align: center;
-    
-   
+
+
 }
 
 .heading-seperate {
-    
-    color: #8d8d8d ;
+
+    color: #8d8d8d;
 }
 
 .main-heading .heading-bold {
 
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 700;
-    
+
 }
 
 
@@ -264,7 +268,7 @@ video-wrapper {
     /*width: 100vw;*/
     margin: 0 auto;
     padding-top: 5px;
-   
+
 }
 
 .nav-links {
@@ -278,8 +282,8 @@ video-wrapper {
     margin-top: 0px;
     padding-left: 0px;
     text-align: center;
-    
-    
+
+
     /*margin: 0 auto;*/
 }
 
@@ -326,30 +330,30 @@ video-wrapper {
 }
 
 .down-arrow {
-    
+
     color: rgba(255, 255, 255, 0.9);
     font-size: 60px;
     position: relative;
     left: 50%;
     padding-top: 30px;
     transform: translateX(-50%);
-    
-    
-} 
+
+
+}
 
 .icon-spacer {
-    
+
     margin-top: 0px;
     margin-bottom: 5px;
     width: 75%;
     border-color: #d4d4d4;
-    
+
 }
 
 /*-------------------------------- AUDIO SECTION ----------------------------------*/
 
 .audio-reel-title {
-    
+
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
@@ -360,6 +364,83 @@ video-wrapper {
 }
 
 .audio-title-container {
-    
-   /* padding-top: 10px;*/
+
+    /* padding-top: 10px;*/
+}
+
+
+/*-------------------------------- FOOTER ----------------------------------*/
+
+.footer-top-row {
+
+    padding-top: 15px;
+}
+
+.footer-background-color {
+
+    background-color: #999;
+}
+
+.footer-list {
+
+    list-style: none;
+    padding: 0px;
+    margin: 10px;
+
+
+}
+
+.footer-list-downloads {
+
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+
+
+}
+
+.footer-list-item {
+
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 13px;
+
+    text-align: center;
+    color: #000;
+
+}
+
+
+
+.footer-links {
+
+    color: #000;
+}
+
+.footer-links:hover,
+.footer-links:focus {
+    color: #000;
+    text-decoration: none;
+
+}
+
+.social-media-icons {
+
+    text-align: center;
+    font-size: 30px;
+    color: #000;
+
+
+}
+
+.social-media-icons i {
+
+    padding: 15px 10px 25px 10px;
+    color: #000c;
+}
+
+.social-media-icons i:hover,
+.social-media-icons i:focus {
+    color: #000c;
 }
