@@ -251,7 +251,12 @@ video-wrapper {
     margin-bottom: 50px;
 }
 
+.home-icon {
 
+   
+    padding-top: 6px;
+    
+}
 
 
 /*-------------------------------- END OF MEDIA ----------------------------*/
@@ -282,8 +287,9 @@ video-wrapper {
     font-weight: 300;
     letter-spacing: 1px;
     font-size: 16px;
-    margin-bottom: 6px;
+    
     text-align: center;
+    vertical-align: middle;
 
 
 }
@@ -302,22 +308,13 @@ video-wrapper {
 
 
 
-.header-spacer {
-
-    margin-top: 0px;
-    margin-bottom: 5px;
-    max-width: 150px;
-    border-top: 0.5px solid #8d8d8d;
-
-}
-
 
 .links-container {
 
     /*position: relative;*/
     /*width: 100vw;*/
-    margin: 0 auto;
-    padding-top: 5px;
+    /*margin: 0 auto;*/
+    
 
 }
 
@@ -328,10 +325,9 @@ video-wrapper {
     letter-spacing: 0.5px;
     font-size: 13px;
     list-style: none;
-    margin-bottom: 5px;
-    margin-top: 0px;
+    vertical-align: middle;
     padding-left: 0px;
-    text-align: center;
+    text-align: right;
 
 
     /*margin: 0 auto;*/
@@ -340,14 +336,14 @@ video-wrapper {
 .link-inline {
 
     display: inline-block;
-    padding-left: 20px;
-    padding-right: 20px
+    padding-left: 10px;
+    padding-right: 10px
 }
 
 .link-item {
 
     text-decoration: none;
-    color: #d4d4d4;
+    color: #000000;
 
 
 }
@@ -356,7 +352,7 @@ video-wrapper {
 .link-item:focus {
 
     text-decoration: none;
-    color: #d4d4d4;
+    color: #000000;
 
 }
 
@@ -428,7 +424,7 @@ video-wrapper {
 
 .footer-background-color {
 
-    background-color: #999;
+    background-color: #cecece;
 }
 
 .footer-list {
