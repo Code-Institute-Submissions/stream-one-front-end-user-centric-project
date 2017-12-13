@@ -57,43 +57,34 @@
 
 .background-image {
 
-    /*background-color: #646a72;*/
+  
     background-image: url("../images/Background-Image-Optimized-960-540.jpg");
     background-position: 50% 0%;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 100vh;
     padding: 0;
     margin: 0;
 
 
 }
 
-@media (min-width: 992px) {
+.background-image-mask {
+    
+     background-color: rgba(0, 0, 0, 0.37);
+     background-position: 50% 0%;
+     background-attachment: fixed;
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 100vh;
+     padding: 0;
+     margin: 0;
+     
+ 
+ }
 
-    .background-image {
-        background-image: url("../images/Background-Image-Optimized-1920-1080.jpg");
-        background-position: center;
-        background-attachment: fixed;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100%;
-        padding: 0;
-        margin: 0;
-    }
-}
 
-.audio-background {
-
-    background-image: url("../images/fader-background-960-540-mobile.jpg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-    padding: 0px;
-    margin: 0px;
-}
 
 
 /* ----------------------------- VIDEO AND AUDIO ------------------------------*/
@@ -253,10 +244,49 @@ video-wrapper {
 
 .home-icon {
 
-   
-    padding-top: 6px;
     
 }
+
+.home-image-layout {
+
+    margin-top: 7px;
+}
+
+.desktop-icon-container {
+
+    height: 44vh;
+    position: relative;
+    
+}
+
+
+.desktop-speaker-icon {
+   /* position: relative;
+    left: 10%;
+    top: 95%;
+    transform: translateY(-50%);*/
+    
+    
+    position: relative;
+    margin-left: 105px;
+    transform: translateX(-50%);
+    top: 94%
+}
+
+ .desktop-video-icon {
+   /* position: relative;
+    left: 90%;
+    top: 93.5%;
+    transform: translateY(-50%);*/
+    
+    position: relative;
+    margin-left: 46.5%;
+    transform: translateX(-50%);
+    top: 91.5%
+              
+ }
+
+
 
 
 /*-------------------------------- END OF MEDIA ----------------------------*/
@@ -286,13 +316,13 @@ video-wrapper {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 300;
     letter-spacing: 1px;
-    font-size: 16px;
-    
+    font-size: 20px;
     text-align: center;
     vertical-align: middle;
 
-
 }
+
+
 
 .heading-seperate {
 
@@ -320,30 +350,37 @@ video-wrapper {
 
 .nav-links {
 
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-weight: 300;
-    letter-spacing: 0.5px;
-    font-size: 13px;
+    
     list-style: none;
     vertical-align: middle;
     padding-left: 0px;
-    text-align: right;
-
+    text-align: center;
+    
 
     /*margin: 0 auto;*/
 }
 
-.link-inline {
 
+
+
+.link-inline {
+    
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    font-size: 15px;
     display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+    
 }
 
 .link-item {
 
     text-decoration: none;
-    color: #000000;
+    color: #fff;
 
 
 }
@@ -352,11 +389,12 @@ video-wrapper {
 .link-item:focus {
 
     text-decoration: none;
-    color: #000000;
+    color: #fff;
 
 }
 
-/*-------------------------------- VIDEO SECTION ----------------------------------*/
+
+/*-------------------------------- MAIN PAGE VIDEO SECTION MOBILE ----------------------------------*/
 
 .video-title-container {
 
@@ -368,12 +406,15 @@ video-wrapper {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-    font-size: 12px;
+    font-size: 15px;
     margin-bottom: 6px;
     text-align: center;
     color: #d4d4d4;
     /*border: 0.5px solid black;*/
 }
+
+
+
 
 .down-arrow {
 
@@ -396,7 +437,9 @@ video-wrapper {
 
 }
 
-/*-------------------------------- AUDIO SECTION ----------------------------------*/
+
+
+/*-------------------------------- MAIN PAGE AUDIO SECTION MOBILE ----------------------------------*/
 
 .audio-reel-title {
 
@@ -414,7 +457,15 @@ video-wrapper {
     /* padding-top: 10px;*/
 }
 
+/*-------------------------------- MAIN PAGE DESKTOP ----------------------------------*/
 
+
+
+ 
+
+ 
+
+    
 /*-------------------------------- FOOTER ----------------------------------*/
 
 .footer-top-row {
@@ -490,3 +541,85 @@ video-wrapper {
 .social-media-icons i:focus {
     color: #000c;
 }
+
+
+
+/*-------------- MEDIA QUERIES --------------------*/
+
+@media (min-width: 992px) {
+    
+        .background-image {
+            
+            background-image: url("../images/Background-Image-Optimized-1920-1080.jpg");
+            background-position: center;
+            
+          
+        }
+    }
+
+   /* @media (min-width: 992px)  {
+
+        .background-image-mask {
+           
+            background-color: rgba(0, 0, 0, 0.37);
+            background-position: 50% 0%;
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+            
+        
+        }
+    }*/
+        
+/*-------------- HEADER -------------------------*/
+
+@media (min-width: 768px) {
+    .main-heading {
+        
+            
+            font-size: 16px;
+            
+        
+        }
+}
+@media (min-width: 768px) {
+    .nav-links {
+
+        
+        list-style: none;
+        vertical-align: middle;
+        padding-left: 0px;
+        text-align: right;
+    
+    
+    }
+}
+
+@media (min-width: 768px) 
+{
+    .link-inline {
+
+    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px
+
+    }
+}
+
+@media (min-width: 768px) {
+    
+       .link-item {
+        color: #000;
+       }
+
+       .link-item:hover,
+       .link-item:focus {
+       
+           text-decoration: none;
+           color: #000;
+       
+       }
+    }
