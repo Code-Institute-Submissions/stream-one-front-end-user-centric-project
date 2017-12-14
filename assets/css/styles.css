@@ -248,12 +248,28 @@ video-wrapper {
     margin-top: 7px;
 }
 
-.desktop-icon-container {
-    position: absolute;
-    height: 44vh;
-    
-    
+.desktop-icon-wrapper {
+    position: relative;
+    height: 44vh; 
 }
+
+.desktop-tv-icon-container {
+
+    position: relative;
+    top: 100%;
+    transform: translateY(-100%);
+    padding-left: 75%;
+   
+}
+
+.desktop-speaker-icon-container {
+
+    position: relative;
+    top: 100%;
+    transform: translateY(-100%);
+    padding-right: 75%;
+}
+
 
 
 .desktop-speaker-icon {
@@ -263,11 +279,13 @@ video-wrapper {
     transform: translateY(-50%);*/
     
     
-    position: relative;
+    /*position: relative;
     left: 52%;
     transform: translateX(-50%);
-    top: 94%;
-    
+    top: 94%;*/
+    display: block;
+    margin: 0 auto;
+   
 }
 
  .desktop-video-icon {
@@ -276,11 +294,12 @@ video-wrapper {
     top: 93.5%;
     transform: translateY(-50%);*/
     
-    position: relative;
+    /*position: relative;
     left: 45%;
     transform: translateX(-50%);
-    top: 91.5%;
-              
+    top: 91.5%;*/
+    display: block;
+    margin: 0 auto;
  }
 
 
