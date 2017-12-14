@@ -255,7 +255,7 @@ video-wrapper {
 .desktop-icon-container {
 
     height: 44vh;
-    position: relative;
+    
     
 }
 
@@ -268,9 +268,10 @@ video-wrapper {
     
     
     position: relative;
-    margin-left: 105px;
+    left: 52%;
     transform: translateX(-50%);
-    top: 94%
+    top: 94%;
+    
 }
 
  .desktop-video-icon {
@@ -280,9 +281,9 @@ video-wrapper {
     transform: translateY(-50%);*/
     
     position: relative;
-    margin-left: 46.5%;
+    left: 45%;
     transform: translateX(-50%);
-    top: 91.5%
+    top: 91.5%;
               
  }
 
@@ -460,8 +461,6 @@ video-wrapper {
 /*-------------------------------- MAIN PAGE DESKTOP ----------------------------------*/
 
 
-
- 
 
  
 
