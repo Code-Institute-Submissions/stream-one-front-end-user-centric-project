@@ -560,7 +560,7 @@ video-wrapper {
 
 /*-------------- MEDIA QUERIES --------------------*/
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     
         .background-image {
             
@@ -572,7 +572,7 @@ video-wrapper {
         }
     }
 
-   @media (min-width: 992px)  {
+   @media (min-width: 768px)  {
 
         .background-image-mask {
            
