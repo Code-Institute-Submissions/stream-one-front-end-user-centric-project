@@ -348,7 +348,7 @@
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 300;
     letter-spacing: 1px;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     vertical-align: middle;
 
@@ -428,7 +428,7 @@
 
 .dropdown-menu {
     position: absolute;
-    top: 75;
+    top: 15px;
     left: 5px;
     z-index: 1000;
     display: none;
@@ -459,7 +459,7 @@
     width: 30px;
     height: 30px;
     border: none;
-    top: 5px;
+    top: 3px;
 
 }
 /*-------------------- BUTTON  -------------------------------*/
@@ -467,7 +467,7 @@
 .cross-bar-1 {
 
     position: absolute;
-    content: '';
+   
     top: 50%;
     left: 15%;
     width: 70%;
@@ -481,7 +481,7 @@
 .cross-bar-2 {
     
     position: absolute;
-    content: '';
+   
     top: 25%;
     left: 15%;
     border-radius: 5px;
@@ -495,7 +495,7 @@
 .cross-bar-3 {
     
     position: absolute;
-    content: '';
+   
     top: 75%;
     left: 15%;
     border-radius: 5px;
@@ -706,6 +706,14 @@
         
 /*-------------- HEADER -------------------------*/
 
+@media (min-width) {
+
+    .main-heading {
+        
+            font-size: 16px;
+            
+    }
+}
 
 @media (min-width: 992px) {
     .nav-links {
