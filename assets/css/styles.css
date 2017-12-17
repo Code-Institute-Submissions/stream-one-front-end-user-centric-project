@@ -19,17 +19,17 @@
 
 
 .header-title-layout,
-.video-section-layout {
+/*.video-section-layout*/ {
 
     padding: 0;
 
 }
 
-.video-section-layout {
+/*.video-section-layout {
 
     height: 100vh;
     width: 100vw;
-}
+}*/
 
 .audio-section-layout {}
 
@@ -213,7 +213,7 @@
 
 /* ----------------------------- CUSTOM ICONS --------------------------------------*/
 
-.video-icon-container {
+/*.video-icon-container {
 
     padding: 45px 0px 15px 0px;
 
@@ -227,7 +227,7 @@
     left: 50%;
     transform: translateX(-50%);
 
-}
+}*/
 
 .audio-icon-container {
 
@@ -261,15 +261,15 @@
 
 .home-image-container {
 
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
-.desktop-icon-wrapper {
+.icon-wrapper {
     position: relative;
     height: 44vh; 
 }
 
-.desktop-tv-icon-container {
+.tv-icon-container {
 
     position: relative;
     top: 100%;
@@ -278,7 +278,7 @@
    
 }
 
-.desktop-speaker-icon-container {
+.speaker-icon-container {
 
     position: relative;
     top: 100%;
@@ -288,7 +288,7 @@
 
 
 
-.desktop-speaker-icon {
+.speaker-icon {
    /* position: relative;
     left: 10%;
     top: 95%;
@@ -304,7 +304,7 @@
    
 }
 
- .desktop-video-icon {
+ .video-icon {
    /* position: relative;
     left: 90%;
     top: 93.5%;
@@ -369,7 +369,7 @@
 }
 
 
-
+/*------------- COLLAPSED-LINKS STYLING -------------------*/
 
 .links-container {
 
@@ -386,7 +386,7 @@
     list-style: none;
     vertical-align: middle;
     padding-left: 0px;
-    text-align: center;
+    text-align: left;
     
 
     /*margin: 0 auto;*/
@@ -401,9 +401,7 @@
     font-weight: 300;
     letter-spacing: 0.5px;
     font-size: 15px;
-    display: inline-block;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 5px 20px 10px 0px;
 
 
     
@@ -425,30 +423,58 @@
 
 }
 
-/*-------------------- MENU ICON COLLAPSE -------------------------*/
 
+/* ------------------- BOOTSTRAP DROPDOWN MENU STYLING------*/
+
+.dropdown-menu {
+    position: absolute;
+    top: 75;
+    left: 5px;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    /* margin: 2px 0 0; */
+    list-style: none;
+    font-size: 14px;
+    /* text-align: left; */
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+
+}
+
+
+/*-------------------- MENU ICON  -------------------------*/
+
+.dropdown-wrapper {
+
+    padding-left: 5px;
+}
 
 .cross-container {
     display: block;
     position: relative;
-    width: 150px;
-    height: 150px;
-    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: 5px;
 
 }
-/*-------------------- BUTTON CLOSED STATE -------------------------------*/
+/*-------------------- BUTTON  -------------------------------*/
 
 .cross-bar-1 {
 
     position: absolute;
     content: '';
     top: 50%;
-    left: 0;
-    width: 100%;
+    left: 15%;
+    width: 70%;
     border-radius: 5px;
-    height: 5px;
-    transform: rotate(45deg); 
-    background-color: #ffffff;
+    height: 2px;
+    transform: rotate(0deg); 
+    background-color: #000;
     
 }
 
@@ -456,47 +482,39 @@
     
     position: absolute;
     content: '';
-    top: 50%;
-    left: 0;
+    top: 25%;
+    left: 15%;
     border-radius: 5px;
-    width: 100%;
-    height: 5px;
-    transform: rotate(-45deg); 
-    background-color: #ffffff;
+    width: 70%;
+    height: 2px;
+    transform: rotate(0deg); 
+    background-color:  #000;
 
 }
 
-.cross-bar-2 {
+.cross-bar-3 {
     
     position: absolute;
     content: '';
-    top: 50%;
-    left: 0;
+    top: 75%;
+    left: 15%;
     border-radius: 5px;
-    width: 100%;
-    height: 5px;
-    transform: rotate(-45deg); 
-    background-color: #ffffff;
+    width: 70%;
+    height: 2px;
+    transform: rotate(0deg); 
+    background-color:  #000;
 
 }
 
-#cross-toggle {
 
-    position: absolute;
-    left: -100%;
-    top: -100%;
-}
-
-.cross-bars:hover {
+.cross-container:hover {
 
     cursor: pointer;
 
 }
-#cross-toggle:checked ~ .toggle-container .cross-bars .cross-bar-1 {
-    
-        transform: rotate(90deg); 
-        
-    }
+
+
+
     
 /*-------------------------------- MAIN PAGE VIDEO SECTION MOBILE ----------------------------------*/
 
@@ -570,10 +588,14 @@
     
 /*-------------------------------- FOOTER ----------------------------------*/
 
-.footer-top-row {
+.footer-top-row,
+.footer-middle-row,
+.footer-bottom-row {
 
-    padding-top: 15px;
+    padding: 15px 0px 25px 0px;
+    margin: 0px;
 }
+
 
 .footer-background-color {
 
@@ -685,44 +707,50 @@
 /*-------------- HEADER -------------------------*/
 
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .nav-links {
 
-        
         list-style: none;
         vertical-align: middle;
         padding-left: 0px;
         text-align: right;
-    
-    
+        margin-top: 11px;
+        margin-bottom: 11px;
+        
+           
     }
 }
 
-@media (min-width: 768px) 
+@media (min-width: 992px) 
 {
     .link-inline {
 
     font-size: 13px;
-    padding-left: 10px;
-    padding-right: 10px
+    padding: 0px 10px 0px 10px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    display: inline-block;
+    
 
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     
-       .link-item {
-        color: #000;
-       }
-
-       .link-item:hover,
-       .link-item:focus {
-       
-           text-decoration: none;
-           color: #000;
-       
-       }
+    .link-item {
+    color: #000;
     }
+
+    .link-item:hover,
+    .link-item:focus {
+    
+        text-decoration: none;
+        color: #000;
+    
+    }
+}
 
 /*-------------- VIDEO AND AUDIO -------------------------*/
 

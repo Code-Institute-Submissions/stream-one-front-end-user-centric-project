@@ -19,24 +19,65 @@
         <div class="background-image-mask">
             <header class="container-fluid header">
                 <div class="row header-layout main-heading-background-color">
-                    <div class="hidden-xs col-sm-4 col-md-4 col-lg-4 col-xl-4 home-image-container">
+                    <div class="hidden-xs hidden-sm col-md-4 col-lg-4 col-xl-4 home-image-container">
                         <a href="index.html">
                             <img class="home-icon" src="assets/images/home_black2_THICK_30px.png" alt="icon of a house">
                         </a>
                     </div>
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 header-title-layout">
+
+      <!------------------ Mobile Nav ------------------------------------------------------------>
+
+                    <nav class="col-xs-2 col-sm-2 hidden-md hidden-lg hidden-xl dropdown-wrapper">
+                        <div class="dropdown">
+
+        <!---------------- BOOTSTRAP DROPDOWN WITH CUSTOM CSS BUTTON STYLING -------------------->
+
+                            <div class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="cross-container"> 
+                                        <div class="cross-bars cross-bar-toggle">
+                                                <span class = "sr-only">Toggle navigation</span>   
+                                                <span class = "cross-bar-1"></span>
+                                                <span class = "cross-bar-2"></span>
+                                                <span class = "cross-bar-3"></span> 
+                                        </div>       
+                                </div> 
+                            </div>
+                        
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <div class="links-container">
+                                    <ul class="nav-links">
+                                        <li class="link-inline">
+                                            <a class="link-item" href="">Home</a>
+                                        </li>
+                                        <li class="link-inline">
+                                            <a class="link-item" href="">Me</a>
+                                        </li>
+                                        <li class="link-inline">
+                                            <a class="link-item" href="">Locate Me</a>
+                                        </li>
+                                        <li class="link-inline">
+                                            <a class="link-item" href="">Book Me</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>              
+                        </div>  
+                    </nav> 
+                 
+                    <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4 col-xl-4 header-title-layout">
                         <h1 class="main-heading">
                             <span class="heading-bold">
-                                <a href="index.html">RACHEL BOOT</a>
+                                <a href="index.html">RACHEL BOOT
                             </span>
                             <span class="heading-seperate"> |</span>
-                            <span class="heading-not-bold"> Voice Over Artist</span>
+                            <span class="heading-not-bold"> Voice Over Artist</span></a>
                         </h1>
                     </div>
+                
 
                     <!------------------ Desktop Nav ------------------------------------------------------------>
 
-                    <nav class="col-sm-4 col-md-4 col-lg-4 col-xl-4 hidden-xs">
+                    <nav class="hidden-xs hidden-sm col-md-4 col-lg-4 col-xl-4">
                         <div class="links-container">
                             <ul class="nav-links">
                                 <li class="link-inline hidden-sm hidden-md hidden-lg hidden-xs">
@@ -53,100 +94,36 @@
                                 </li>
                             </ul>
                         </div>
-                    </nav>
-                </div>
-                <!------------------ Mobile Nav ------------------------------------------------------------>
-                <nav class="col-xs-12 hidden-sm hidden-md hidden-lg hidden-xl">
-                    <div class="links-container">
-                        <ul class="nav-links">
-                            <li class="link-inline">
-                                <a class="link-item" href="">Home</a>
-                            </li>
-                            <li class="link-inline">
-                                <a class="link-item" href="">Me</a>
-                            </li>
-                            <li class="link-inline">
-                                <a class="link-item" href="">Locate Me</a>
-                            </li>
-                            <li class="link-inline">
-                                <a class="link-item" href="">Book Me</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+                    </nav>  
+                </div>                
             </header>
 
-            <div class="dropdown">
-                <!---<div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">---------->
-                    <!--<div class="cross-container"> 
-                        <input id=cross-toggle type="checkbox">
-                        <label class="toggle-container" for="cross-toggle">
-                            <div class="cross-bars cross-bar-toggle">
-                                    <span class = "sr-only">Toggle navigation</span>   
-                                    <span class = "cross-bar-1"></span>
-                                    <span class = "cross-bar-2"></span>
-                                    <span class = "cross-bar-3"></span> 
-                            </div>
-                        </label>
-                        
-                    </div>  -------------->
-                <div class="dropdown-toggle" type="checkbox" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <div class="cross-container"> 
-                        <input id=cross-toggle type="checkbox">
-                        <label class="toggle-container" for="cross-toggle">
-                            <div class="cross-bars cross-bar-toggle">
-                                    <span class = "sr-only">Toggle navigation</span>   
-                                    <span class = "cross-bar-1"></span>
-                                    <span class = "cross-bar-2"></span>
-                                    <span class = "cross-bar-3"></span> 
-                            </div>
-                        </label>          
-                    </div> 
-                </div>
+           
             
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <div class="links-container">
-                            <ul class="nav-links">
-                                <li class="link-inline">
-                                    <a class="link-item" href="">Home</a>
-                                </li>
-                                <li class="link-inline">
-                                    <a class="link-item" href="">Me</a>
-                                </li>
-                                <li class="link-inline">
-                                    <a class="link-item" href="">Locate Me</a>
-                                </li>
-                                <li class="link-inline">
-                                    <a class="link-item" href="">Book Me</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>              
-                </div>  
-            </div>  
+            
             
 
-            <!-------------------- Main Section Mobile ---------------------------------------------->
+            <!-------------------- LANDING PAGE  ---------------------------------------------->
         <section class="container-fluid">
-                <div class="row desktop-section-layout">
-                    <div class="col-xs-6 col-sm-3 col-sm-offset-3 col-md-3 col-md-offset-3 col-lg-3 col-lg-offset-3 desktop-icon-wrapper">
-                        <div class="desktop-tv-icon-container">
+                <div class="row icon-section-layout">
+                    <div class="col-xs-6 col-sm-3 col-sm-offset-3 col-md-3 col-md-offset-3 col-lg-3 col-lg-offset-3 icon-wrapper">
+                        <div class="tv-icon-container">
                         
-                            <a class="desktop-icon-hover hidden-lg hidden-xl" href="#video-mobile">
-                                <img class="desktop-video-icon" src="assets/images/TV_white_straight_THICK_32pxby42px_mobile.png" alt="small icon of a tv">
+                            <a class="icon-hover" href="#video-mobile">
+                                <img class="video-icon" src="assets/images/TV_white_straight_THICK_32pxby42px_mobile.png" alt="small icon of a tv">
                             </a>
-                            <a class="desktop-icon-hover hidden-xs hidden-sm hidden-md " href="#video-desktop">
-                                <img class="desktop-video-icon" src="assets/images/TV_white_straight_THICK_50x66px.png" alt="small icon of a tv">
+                            <a class="icon-hover hidden-xs hidden-sm hidden-md hidden-lg hidden-xl " href="#video-desktop">
+                                <img class="video-icon" src="assets/images/TV_white_straight_THICK_50x66px.png" alt="small icon of a tv">
                             </a>
                         </div>
                     </div>
-                    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 desktop-icon-wrapper">
-                        <div class="desktop-speaker-icon-container">
-                            <a class="desktop-icon-hover hidden-lg hidden-xl" href="#audio-section">
-                                <img class="desktop-speaker-icon" src="assets/images/speaker_White2_THICK_41x36px_mobile.png" alt="small icon of a tv">
+                    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 icon-wrapper">
+                        <div class="speaker-icon-container">
+                            <a class="icon-hover" href="#audio-section">
+                                <img class="speaker-icon" src="assets/images/speaker_White2_THICK_41x36px_mobile.png" alt="small icon of a tv">
                             </a> 
-                            <a class="desktop-icon-hover hidden-xs hidden-sm hidden-md" href="#audio-section">
-                                <img class="desktop-speaker-icon" src="assets/images/speaker_White2_THICK_66x50.png" alt="small icon of a tv">
+                            <a class="icon-hover hidden-xs hidden-sm hidden-md hidden-lg hidden-xl" href="#audio-section">
+                                <img class="speaker-icon" src="assets/images/speaker_White2_THICK_66x50.png" alt="small icon of a tv">
                             </a>
                         </div>
                     </div>
@@ -377,8 +354,8 @@
 
 
     <footer class="container-fluid footer-layout footer-background-color">
-        <div class="row">
-            <div class="col-xs-12 footer-top-row">
+        <div class="row footer-top-row">
+            <div class="col-xs-12">
                 <ul class="footer-list">
                     <li class="footer-list-item"><a class="footer-links" href="mailto:rachelbootvoice@gmail.com"><span class="footer-email-bold">rachelbootvoice@gmail.com</span></a></li>
                 </ul>
@@ -392,7 +369,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row footer-middle-row">
             <div class="col-xs-12">
                 <ul class="footer-list">
                     <li class="footer-list-item">
@@ -412,7 +389,7 @@
                 </ul>
             </div>
         </div>
-        <div class="row">
+        <div class="row footer-bottom-row">
             <div class="col-xs-12">
                 <div class="social-media-icons">
                     <a href="https://twitter.com/rachelbootvoice?lang=en" target="_blank">
