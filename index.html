@@ -46,17 +46,17 @@
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <div class="links-container">
                                     <ul class="nav-links">
-                                        <li class="link-inline">
-                                            <a class="link-item" href="">Home</a>
+                                        <li class="link-drop">
+                                            <a class="link-item" href=""><span class="link-underline">Home</span></a>
                                         </li>
-                                        <li class="link-inline">
-                                            <a class="link-item" href="">Me</a>
+                                        <li class="link-drop">
+                                            <a class="link-item" href=""><span class="link-underline">Me</span></a>
                                         </li>
-                                        <li class="link-inline">
-                                            <a class="link-item" href="">Locate Me</a>
+                                        <li class="link-drop">
+                                            <a class="link-item" href=""><span class="link-underline">Locate Me</span></a>
                                         </li>
-                                        <li class="link-inline">
-                                            <a class="link-item" href="">Book Me</a>
+                                        <li class="link-drop">
+                                            <a class="link-item" href=""><span class="link-underline">Book Me</span></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -80,17 +80,14 @@
                     <nav class="hidden-xs hidden-sm col-md-4 col-lg-4 col-xl-4">
                         <div class="links-container">
                             <ul class="nav-links">
-                                <li class="link-inline hidden-sm hidden-md hidden-lg hidden-xs">
-                                    <a class="link-item" href="">Home</a>
+                                <li class="link-inline">
+                                    <a class="desktop-link-item" href=""><span class="header-underline">Me</span></a>
                                 </li>
                                 <li class="link-inline">
-                                    <a class="link-item" href="">Me</a>
+                                    <a class="desktop-link-item" href=""><span class="header-underline">Locate Me</span></a>
                                 </li>
                                 <li class="link-inline">
-                                    <a class="link-item" href="">Locate Me</a>
-                                </li>
-                                <li class="link-inline">
-                                    <a class="link-item" href="">Book Me</a>
+                                    <a class="desktop-link-item" href=""><span class="header-underline">Book Me</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -104,30 +101,31 @@
             
 
             <!-------------------- LANDING PAGE  ---------------------------------------------->
-        <section class="container-fluid">
+            <section class="container-fluid">
                 <div class="row icon-section-layout">
                     <div class="col-xs-6 col-sm-3 col-sm-offset-3 col-md-3 col-md-offset-3 col-lg-3 col-lg-offset-3 icon-wrapper">
-                        <div class="tv-icon-container">
+                        <div class="video-icon-container">
                         
-                            <a class="icon-hover" href="#video-mobile">
+                            <a class="video-icon-hover" href="#video-section">
                                 <img class="video-icon" src="assets/images/TV_white_straight_THICK_32pxby42px_mobile.png" alt="small icon of a tv">
                             </a>
-                            <a class="icon-hover hidden-xs hidden-sm hidden-md hidden-lg hidden-xl " href="#video-desktop">
+                           <!---- <a class="icon-hover hidden-xs hidden-sm hidden-md hidden-lg hidden-xl " href="#video-desktop">
                                 <img class="video-icon" src="assets/images/TV_white_straight_THICK_50x66px.png" alt="small icon of a tv">
-                            </a>
+                            </a>-------->
                         </div>
                     </div>
                     <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 icon-wrapper">
                         <div class="speaker-icon-container">
-                            <a class="icon-hover" href="#audio-section">
+                            <a class="speaker-icon-hover" href="#audio-section">
                                 <img class="speaker-icon" src="assets/images/speaker_White2_THICK_41x36px_mobile.png" alt="small icon of a tv">
                             </a> 
-                            <a class="icon-hover hidden-xs hidden-sm hidden-md hidden-lg hidden-xl" href="#audio-section">
-                                <img class="speaker-icon" src="assets/images/speaker_White2_THICK_66x50.png" alt="small icon of a tv">
+                            <!----<a class="icon-hover hidden-xs hidden-sm hidden-md hidden-lg hidden-xl" href="#audio-section">
+                                <img class="speaker-icon" src="assets/images/speaker_White2_THICK_66x50.png" alt="small icon of a tv">------>
                             </a>
                         </div>
                     </div>
-                </div>                      
+                </div>  
+                <hr class="icon-underline">                    
             </section>
         </div>
     </div>
@@ -136,7 +134,7 @@
 
             <!------------------- Video Section Mobile ---------------------------------------------->
 
-    <section id="video-mobile" class="hidden-md hidden-lg hidden-xl">
+    <section id="video-section" class="hidden-md hidden-lg hidden-xl">
         <div class="container-fluid all-video-wrapper">
             <div class="row">
                 <div class="col-xs-12 col-lg-6 video-title-container">
@@ -222,7 +220,7 @@
 
             <!------------------- Video Section Desktop -------------------------------------->
 
-    <section id="video-desktop" class="hidden-xs hidden-sm">
+    <section id="video-section" class="hidden-xs hidden-sm">
         <div class="container-fluid all-video-wrapper">
             <div class="row">
                 <div class="col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2 col-xl-4 col-xl-offset-2 video-title-container">
@@ -236,16 +234,20 @@
                 <div class="col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2 col-xl-4 col-xl-offset-2">
                     <div class="video-wrapper">
                         <div class="video-responsive-container video-aspect">
-                            <iframe class="video-clip-one" width="1290" height="725" src="https://www.youtube.com/embed/JZFxetyjHcs" frameborder="0"
-                                gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            <div class="video-overlay">
+                                <iframe class="video-clip-one" width="1290" height="725" src="https://www.youtube.com/embed/JZFxetyjHcs" frameborder="0"
+                                    gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            </div>        
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4 col-xl-4">
                     <div class="video-wrapper">
                         <div class="video-responsive-container video-aspect">
-                            <iframe class="video-clip-two" width="1290" height="725" src="https://www.youtube.com/embed/UCfzppaPWH4" frameborder="0"
-                                gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            <div class="video-overlay">
+                                <iframe class="video-clip-two" width="1290" height="725" src="https://www.youtube.com/embed/UCfzppaPWH4" frameborder="0"
+                                 gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -262,18 +264,20 @@
                 <div class="col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2 col-xl-4 col-xl-offset-2">
                     <div class="video-wrapper">
                         <div class="video-responsive-container video-aspect">
-                            <iframe class="video-clip-one" width="1290" height="725" src="https://www.youtube.com/embed/t5AH6UZvPlA" frameborder="0"
-                                gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            <div class="video-overlay">
+                                <iframe class="video-clip-one" width="1290" height="725" src="https://www.youtube.com/embed/t5AH6UZvPlA" frameborder="0"
+                                 gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            </div>     
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4 col-xl-4">
                     <div class="video-wrapper">
                         <div class="video-responsive-container video-aspect">
-
-                            <iframe class="video-clip-two" width="1290" height="725" src="https://www.youtube.com/embed/kAgywXVWb1s" frameborder="0"
-                                gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-
+                            <div class="video-overlay">
+                                <iframe class="video-clip-two" width="1290" height="725" src="https://www.youtube.com/embed/kAgywXVWb1s" frameborder="0"
+                                    gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -290,16 +294,20 @@
                 <div class="col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2 col-xl-4 col-xl-offset-2">
                     <div class="video-wrapper">
                         <div class="video-responsive-container video-aspect">
-                            <iframe class="video-clip-one" width="1290" height="725" src="https://www.youtube.com/embed/16RIek71UDc" frameborder="0"
-                                gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            <div class="video-overlay">
+                                <iframe class="video-clip-one" width="1290" height="725" src="https://www.youtube.com/embed/16RIek71UDc" frameborder="0"
+                                    gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4 col-xl-4">
                     <div class="video-wrapper">
                         <div class="video-responsive-container video-aspect">
-                            <iframe class="video-clip-one" width="1290" height="725" src="https://www.youtube.com/embed/1s2sAGbQJXc" frameborder="0"
-                                gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            <div class="video-overlay">
+                                <iframe class="video-clip-one" width="1290" height="725" src="https://www.youtube.com/embed/1s2sAGbQJXc" frameborder="0"
+                                    gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -323,11 +331,7 @@
 
 
     <section id="audio-section" class="container-fluid">
-        <div class="row">
-            <div class="col-xs-12 audio-icon-container">
-                <img class="audio-icon" src="assets/images/speaker_black_40px_mobile.png" alt="small icon of a speaker">
-            </div>
-        </div>
+        
         <div class="row">
             <div class="col-xs-12 audio-title-container">
                 <p class="audio-reel-title"> Voice Reel </p>
@@ -340,6 +344,15 @@
                 </audio>
             </div>
         </div>
+        <div class="row">
+                <div class="col-xs-12 audio-icon-container fader-image-container">
+                    <img class="audio-icon fader-image" src="assets/images/fader-background-960-540-mobile.jpg" alt="small icon of a speaker">
+                </div>
+            </div>
+    </section>
+
+    <section>
+        
     </section>
 
 
@@ -357,10 +370,10 @@
         <div class="row footer-top-row">
             <div class="col-xs-12">
                 <ul class="footer-list">
-                    <li class="footer-list-item"><a class="footer-links" href="mailto:rachelbootvoice@gmail.com"><span class="footer-email-bold">rachelbootvoice@gmail.com</span></a></li>
+                    <li class="footer-list-item"><a class="footer-links" href="mailto:rachelbootvoice@gmail.com"><span class="footer-underline">rachelbootvoice@gmail.com</span></a></li>
                 </ul>
                 <ul class="footer-list">
-                    <li class="footer-list-item"><a class= "footer-links" href="http://www.bonvolks.com/" target="_blank">Bon Volks Studios</a>
+                    <li class="footer-list-item"><a class= "footer-links" href="http://www.bonvolks.com/" target="_blank"><span class="footer-underline">Bon Volks Studios</span></a>
                         <br>12 Park Lane
                         <br>Margate
                         <br>Kent CT9 1RQ
@@ -374,17 +387,17 @@
                 <ul class="footer-list">
                     <li class="footer-list-item">
                         <a class="footer-links" href="https://www.peopleperhour.com/freelancer/rachel/boot/voice-over-production-and-editing/331864"
-                            target="_blank">People-Per-Hour</a>
+                            target="_blank"><span class="footer-underline">People-Per-Hour</span></a>
                     </li>
                 </ul>
                 <ul class="footer-list-downloads">
                     <li class="footer-list-item">
-                        <a class="footer-links" href="assets/audio/Rachel+Boot+Reel_V2.mp3" download="Rachel-Boot-Voice-Reel-v2.mp3">Download Voice Reel</a>
+                        <a class="footer-links" href="assets/audio/Rachel+Boot+Reel_V2.mp3" download="Rachel-Boot-Voice-Reel-v2.mp3"><span class="footer-underline">Download Voice Reel</span></a>
                     </li>
                 </ul>
                 <ul class="footer-list-downloads">
                     <li class="footer-list-item">
-                        <a class="footer-links" href="#">Download Credit Reel</a>
+                        <a class="footer-links" href="#"><span class="footer-underline">Download Credit Reel</span></a>
                     </li>
                 </ul>
             </div>
@@ -409,6 +422,7 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    
 
 </body>
 
