@@ -1,6 +1,6 @@
 /**/
 
-@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:300,300i,400,400i,500,500i,600,600i,700,700i|Barlow+Semi+Condensed:300,300i,400,400i,500,500i,600,600i,700,700i|Hind+Vadodara:300,400,500,600,700|Khand:400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:300,300i,400,400i,500,500i,600,600i,700,700i|Barlow+Semi+Condensed:300,300i,400,400i,500,500i,600,600i,700,700i|Hind+Vadodara:300,400,500,600,700|Khand:400,500,600,700|Quicksand:400,500,700");
 
 
 /*------------------------------ GLOBAL LAYOUT ---------------------------------------*/
@@ -30,6 +30,13 @@
 .footer-layout {
 
     padding: 50px 0px 50px 0px;
+}
+
+.container-fluid-layout {
+    
+    padding: 0px;
+    margin: 0px;
+    
 }
 
 
@@ -377,6 +384,7 @@
      
 }
 
+
 .link-item:hover,
 .link-item:focus {
     
@@ -385,6 +393,7 @@
     opacity: 1.0;
     
 }
+
 
 .link-underline {
 
@@ -405,6 +414,47 @@
 
 .link-underline:hover:after,
 .link-underline:focus:after {
+
+    opacity: 1;
+}
+
+.link-item-me {
+    
+    color: #000000;
+    text-decoration: none;
+    opacity: 0.9;
+    transition: all 0.5s cubic-bezier(.83,.18,.35,.77)
+        
+}
+
+.link-item-me:hover,
+.link-item-me:focus {
+    
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    opacity: 1.0;
+    
+}
+
+.link-underline-me {
+    
+    display: inline-block;
+    
+}
+    
+.link-underline-me:after {
+
+    content:'';
+    width: 100%;
+    height: 1px;
+    display: block;
+    opacity: 0;
+    background: rgb(0, 0, 0);
+    transition: all 0.5s cubic-bezier(.83,.18,.35,.77)
+}
+
+.link-underline-me:hover:after,
+.link-underline-me:focus:after {
 
     opacity: 1;
 }
@@ -490,7 +540,7 @@
 .dropdown-menu {
 
     position: absolute;
-    top: 25px;
+    top: 20px;
     left: 5px;
     z-index: 1000;
     display: block;
@@ -803,7 +853,24 @@
 
 /*-------------- ABOUT ME PAGE STYLES--------------*/
 
-.bio-image-container {
+
+.bio-image-wrapper {
+
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-image: url("../images/rachel-boot.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    width: 100vw;
+    
+    
+}
+
+/*.bio-image-container {
 
     position: relative;
     padding-top: 0px;
@@ -818,6 +885,7 @@
 
 
 }
+
 .bio-image {
 
     position: absolute;
@@ -825,16 +893,93 @@
     width: 100%;
     height: 100%;
     
-}
+}*/
 
-.bio-heading {
+.article-heading {
 
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 20px;
     text-align: center;
+    color: #000;
 }
 
-.bio-wording {
+.heading-underline:after {
 
+    content:'';
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 1px;
+    background: #000000;
+
+}
+
+.heading-underline-my-approach:after {
+
+    content:'';
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 1px;
+    background: #000000;
+
+
+}
+
+.my-approach-image-container-1,
+.my-approach-image-container-2 {
+
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+.my-approach-image-1 {
+
+    background-image: url("../images/free_stock_B&W_macbook_960_720.jpg");
+    background-attachment: fixed;
+    background-position: 10% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+.my-approach-image-2 {
+    
+    background-image: url("../images/microphone-stock-B&W-2487829_738_415.jpg");
+    background-attachment: fixed;
+    background-position: 25% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.article-wording {
+
+    font-family: 'Quicksand', sans-serif;
+    padding: 5px 15px 15px 15px;;
     text-align: left;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 14px;
+    text-align: left;
+    color: #000;
+    /*background-color: #a8aaae45;*/
+}
+
+.article-container {
+
+    padding-left: 0px;
+    padding-right: 0px;
 }
 /*-------------- MEDIA QUERIES --------------------*/
 
