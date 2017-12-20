@@ -1076,6 +1076,20 @@
     
 }
 
+.bio-section {
+    
+    padding-top: 25px;
+    padding-bottom:25px;
+    
+}
+
+.my-approach-section,
+.review-section {
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
 /*.client-icons-section   {
 
     padding-bottom: 50px;
@@ -1184,6 +1198,72 @@
     }
 }
 
+/*----------------- ME PAGE -------------------------------*/
+/*---------------------------------------------------------*/
+
+
+
+@media (min-width: 667px) {
+    
+        .bio-image-wrapper {
+            
+            background-attachment: scroll;
+            height: 88vh;
+            
+        }
+    }
+    
+
+@media (min-width: 768px){
+    
+        .client-icons {
+            max-width: 35%;
+            max-height: 35%;
+        }
+    }
+
+@media (min-width: 768px){
+    
+        .bio-section-wrapper {
+            
+                height: 100vh;
+            }
+    }
+
+/*@media (min-width: 768px){
+        
+         .bio-section {
+        
+                padding-top: 25px;
+                
+            }
+    }
+@media (min-width: 768px){
+
+        .my-approach-section,
+        .review-section {
+
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+    }*/
+    
+
+
+@media (min-width: 768px) {
+
+    .bio-image-wrapper {
+        
+        margin-left: 25vw;
+        /* margin-right: 0px; */
+        background-size: 100%;
+        width: 50vw;
+        height: 50vh;
+        background-position: 50% 0%;
+        background-attachment: scroll;
+
+    }
+}
     /*-------------- ANIMATIONS -------------------------*/
 
 @keyframes fade-up {
