@@ -329,7 +329,7 @@
     animation-name: fade-up;
     animation-timing-function: ease-in;
     animation-duration: 0.5s;
-    animation-delay: 2s;
+    animation-delay: 1.5s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
 
@@ -524,7 +524,7 @@
         animation-name: fade-up;
         animation-timing-function: ease-in;
         animation-duration: 0.5s;
-        animation-delay: 1.5s;
+        animation-delay: 2s;
         animation-fill-mode: forwards;
         animation-iteration-count: 1;
 
@@ -588,7 +588,7 @@
     animation-name: fade-up;
     animation-timing-function: ease-in;
     animation-duration: 0.5s;
-    animation-delay: 1.5s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
 
@@ -1023,6 +1023,7 @@
     padding-left: 0px;
     padding-right: 0px;
 }
+
 /*-------------- MEDIA QUERIES --------------------*/
 
 @media (max-width: 375px) {
