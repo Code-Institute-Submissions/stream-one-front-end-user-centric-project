@@ -1095,7 +1095,7 @@
     padding-bottom: 50px;
 
 }*/
-/*-------------- MEDIA QUERIES --------------------*/
+/*-------------- MEDIA QUERIES MAIN PAGE --------------------*/
 
 @media (max-width: 375px) {
     
@@ -1120,9 +1120,6 @@
         animation-iteration-count: 1;
         
     }
-}
-
-   @media (min-width: 768px)  {
 
     .background-image-mask {
         
@@ -1132,19 +1129,11 @@
     
     }
 }
-        
-/*-------------- HEADER -------------------------*/
 
-@media (min-width) {
 
-    .main-heading {
-        
-            font-size: 16px;
-            
-    }
-}
 
 @media (min-width: 992px) {
+
     .nav-links {
 
         list-style: none;
@@ -1155,12 +1144,9 @@
         margin-bottom: 9px;
             
     }
-}
-
-@media (min-width: 992px) {
 
     .link-inline {
-
+        
         font-size: 13px;
         padding: 0px 10px 0px 10px;
         font-family: 'Barlow Semi Condensed', sans-serif;
@@ -1170,10 +1156,7 @@
         display: inline-block;
     
     }
-}
 
-@media (min-width: 992px ) {
-    
     .icon-underline {
         width: 25%;
         animation-name: underline;
@@ -1184,12 +1167,6 @@
         animation-iteration-count: 1;
         
     } 
-}
-
-/*-------------- VIDEO AND AUDIO -------------------------*/
-
-
-@media (min-width: 992px ){
 
     .video-wrapper {
         
@@ -1198,7 +1175,9 @@
     }
 }
 
-/*----------------- ME PAGE -------------------------------*/
+
+
+/*----------------- MEDIA QUERIES ME PAGE -------------------------------*/
 /*---------------------------------------------------------*/
 
 
@@ -1220,15 +1199,24 @@
             max-width: 35%;
             max-height: 35%;
         }
-    }
 
-@media (min-width: 768px){
-    
         .bio-section-wrapper {
             
-                height: 100vh;
-            }
+            height: 100vh;
+        }
+        .bio-image-wrapper {
+        
+            margin-left: 25vw;
+            /* margin-right: 0px; */
+            background-size: 100%;
+            width: 50vw;
+            height: 50vh;
+            background-position: 50% 0%;
+            background-attachment: scroll;
+
+         }
     }
+
 
 /*@media (min-width: 768px){
         
@@ -1250,20 +1238,30 @@
     
 
 
-@media (min-width: 768px) {
+
+@media (min-width: 1024px) {
 
     .bio-image-wrapper {
-        
-        margin-left: 25vw;
-        /* margin-right: 0px; */
-        background-size: 100%;
+       
         width: 50vw;
-        height: 50vh;
-        background-position: 50% 0%;
+        height: 100vh;
         background-attachment: scroll;
+    }
 
+    .bio-section-wrapper {
+        
+            height: 150vh;
+        }
+
+    .bio-section {
+        
+        padding-top: 0px;
+        padding-bottom:25px;
+        
     }
 }
+
+
     /*-------------- ANIMATIONS -------------------------*/
 
 @keyframes fade-up {
