@@ -172,9 +172,9 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    height: 50%;
-    width: 50%;
-    margin-bottom: 100px;
+    height: 75%;
+    width: 75%;
+    /*margin-bottom: 50px;*/
 
 }
 
@@ -1051,31 +1051,36 @@
     
 }
 
-.client-icons-container {
+/*.client-icons-container {
 
+    height: 100%;
+    width: 100%;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 50%;
-    transform: translateX(-50%);
-}
+    left: 0;
+    top: 0;
+    bottom: 0;
+    
+}*/
 
 .client-icons {
 
     max-width: 45%;
     max-height: 45%;
     display: block;
-    position: relative;
+    position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    /*transform: translateY(-50%)*/
     
 }
 
-.client-icons-section   {
+/*.client-icons-section   {
 
-    
     padding-bottom: 50px;
-}
+
+}*/
 /*-------------- MEDIA QUERIES --------------------*/
 
 @media (max-width: 375px) {
