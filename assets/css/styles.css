@@ -14,7 +14,7 @@
 
     margin: 0;
     padding: 0;
-    max-height: 12%;
+    height: 39px;
 }
 
 
@@ -576,6 +576,7 @@
 
 /*-------------------- MENU ICON  -------------------------*/
 
+
 .dropdown-wrapper {
 
     padding-left: 5px;
@@ -612,7 +613,7 @@
     height: 2px;
     transform: rotate(0deg); 
     background-color: #000;
-    transition: width 0.4s ease-in-out;
+    transition: width 0.2s ease-in-out;
     
 }
 
@@ -634,7 +635,7 @@
     height: 2px;
     transform: rotate(0deg); 
     background-color:  #000;
-    transition: width 0.4s ease-in-out;
+    transition: width 0.2s ease-in-out;
 
 }
 
@@ -656,7 +657,7 @@
     height: 2px;
     transform: rotate(0deg); 
     background-color:  #000;
-    transition: width 0.4s ease-in-out;
+    transition: width 0.2s ease-in-out;
 
 }
 
@@ -859,6 +860,13 @@
 
 /*-------------- ABOUT ME PAGE STYLES--------------*/
 
+.me-main-wrapper {
+    
+        height: 100vh;
+        width: 100vw;
+        
+    }
+    
 
 .bio-image-background {
 
@@ -866,11 +874,11 @@
     margin-left: 0px;
     margin-right: 0px;
     background-image: url("../images/me-page/rachel-boot-repaired.jpg");
-    background-position: 50% 20%;
+    background-position: 35% 0%;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 100vh;
+    height: 95vh;
     width: 100vw;
     
     
@@ -1112,6 +1120,8 @@
 
 .bio-section {
 
+    padding-top: 25px;
+    padding-bottom: 25px;
     opacity: 0;
     animation-name: fade-up;
     animation-delay: 0.5s;
@@ -1125,19 +1135,46 @@
 
 
 
-.scroll-arrow {
+.scroll-arrow-mobile {
     
     position: relative;
+    top: 90vh;
     left: 50%;
     transform: translateX(-50%);
     font-size: 32px;
-    color: #535353a8;
+    color: #000000a4;
+}
+
+.scroll-arrow-desktop-container {
+
+    position: relative;
+    height: 5vh;
+}
+.scroll-arrow-desktop {
+    
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 32px;
+    color: #000000a4;
+    opacity; 0;
+
+   
+    animation-name: arrow-down;
+    animation-delay: 0.5s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 7;
+    animation-timing-function: cubic-bezier(.67,.35,.61,.15);
+    animation-duration: 0.6s;
 }
 
 
 /*-------------- MEDIA QUERIES MAIN PAGE --------------------*/
 
-@media (max-width: 375px) {
+@media (min-width: 375px) {
     
     .background-image {
 
@@ -1145,6 +1182,7 @@
         
     }
 }
+
 
 
 @media (min-width: 768px) {
@@ -1223,6 +1261,15 @@
 /*---------------------------------------------------------*/
 
 
+@media (min-width: 375px) {
+
+    .bio-image-background {
+
+    background-position: 50% 0%;
+
+    }
+}
+
 
 @media (min-width: 667px) {
     
@@ -1232,8 +1279,13 @@
             height: 88vh;
             
         }
+
+        .scroll-arrow-mobile {
+            
+            display: none;
     }
-    
+}
+
 
 @media (min-width: 768px){
 
@@ -1243,9 +1295,11 @@
             
         }
 
+    
+
         .bio-image {
             
-            height:95vh;      
+            height: 94.5vh;      
         }
             
     
@@ -1262,8 +1316,8 @@
 
         .bio-section {
 
-            height: 30vh;
-            padding-bottom:25px;
+            height: 40vh;
+            padding-bottom:50px;
         }
         /*.bio-image-background {
         
@@ -1277,13 +1331,11 @@
 
          }*/
 
-         .article-container {
+        /*.bio-article-container {
             
            
-            padding-bottom:20px;
-        }
-            
-
+            padding-bottom: 25px;
+        }*/
          
     }
 
@@ -1310,35 +1362,48 @@
 
 @media (min-width: 992px) {
 
+    /*.bio-section-container {
+
+        height: 95vh;
+    }*/
     .bio-image {
         
         height: 94.5vh;      
     }
-        
- 
-    
-    .bio-article-heading {
+     
+    .bio-section {
 
-        padding-top: 20px;
-        
+        height: 25vh;
+        padding-bottom: 25px;
     }
+        
+
+    /*.bio-article-heading {
+
+        padding-top: 0px;
+        
+    }*/
 
     /*.bio-section-wrapper {
         
         height: 100vh;
     }*/
 
-   .bio-section {
+   /*.bio-section {
         
-       height: 25vh;
+       height: 50vh;
        padding-bottom:0px;
         
-    }
+    }*/
 
+    .bio-article-wording {
+
+        padding-bottom: 25px;
+    }
     .article-container {
         
         margin-left:0%;
-        padding-bottom:5px;
+        /*padding-bottom:15px;*/
     }
         
 }
@@ -1355,7 +1420,7 @@
     
     .bio-section {
         
-       height: 33vh;
+       height: 40vh;
 
     }
 
@@ -1416,5 +1481,20 @@
     }
 }
 
+@keyframes arrow-down {
+    
+    from {
+
+        top: 0%;
+        
+    }
+
+    to {
+
+        top: 65%; 
+       
+
+    }
+}
   
     
