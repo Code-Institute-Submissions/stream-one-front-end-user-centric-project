@@ -860,7 +860,7 @@
 /*-------------- ABOUT ME PAGE STYLES--------------*/
 
 
-.bio-image-wrapper {
+.bio-image-background {
 
     padding: 0px;
     margin-left: 0px;
@@ -1066,7 +1066,6 @@
 
     max-width: 45%;
     max-height: 45%;
-    display: block;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -1095,11 +1094,24 @@
     padding-bottom: 50px;
 
 }*/
+
+/*------------- ME PAGE LARGE VIEWPORT STYLES ---------------*/
+
+.bio-image {
+
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height:50vh;
+    padding-top: 25px;
+    
+}
 /*-------------- MEDIA QUERIES MAIN PAGE --------------------*/
 
 @media (max-width: 375px) {
     
     .background-image {
+
         background-position: 35% 0%;
         
     }
@@ -1184,7 +1196,7 @@
 
 @media (min-width: 667px) {
     
-        .bio-image-wrapper {
+        .bio-image-background {
             
             background-attachment: scroll;
             height: 88vh;
@@ -1204,7 +1216,7 @@
             
             height: 100vh;
         }
-        .bio-image-wrapper {
+        .bio-image-background {
         
             margin-left: 25vw;
             /* margin-right: 0px; */
@@ -1241,16 +1253,19 @@
 
 @media (min-width: 1024px) {
 
-    .bio-image-wrapper {
+    .bio-image-background {
        
-        width: 50vw;
-        height: 100vh;
-        background-attachment: scroll;
+        display: none;
+    }
+
+    .article-heading {
+
+        padding-top: 25px;
     }
 
     .bio-section-wrapper {
         
-            height: 150vh;
+            height: 100vh;
         }
 
     .bio-section {
