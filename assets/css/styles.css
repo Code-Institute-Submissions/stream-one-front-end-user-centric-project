@@ -991,7 +991,7 @@
 
 .my-approach-image-1 {
 
-    background-image: url("../images/me-page/record-technology-equipment-microphone-mic-studio-775481-pxhere.com.1920-1080-75%.jpg");
+    background-image: url("../images/me-page/record-technology-equipment-microphone-mic-studio-775481-pxhere.com.1920-1080-75.jpg");
     background-attachment: fixed;
     background-position: 10% 0%;
     background-size: cover;
@@ -1002,7 +1002,7 @@
 
 .my-approach-image-2 {
     
-    background-image: url("../images/me-page/microphone-mic-studio-775481-pxhere.com.-1920-1080-75%.jpg");
+    background-image: url("../images/me-page/microphone-mic-studio-775481-pxhere.com.-1920-1080-75.jpg");
     background-attachment: fixed;
     background-position: 55% 0%;
     background-size: cover;
@@ -1013,7 +1013,7 @@
 
 .review-image-3 {
     
-    background-image: url("../images/me-page/laptop-notebook-music-light-controller-microphone-847252-pxhere.com-1920-1080-75%.jpg");
+    background-image: url("../images/me-page/laptop-notebook-music-light-controller-microphone-847252-pxhere.com-1920-1080-75.jpg");
     background-attachment: fixed;
     background-position: 45% 0%;
     background-size: cover;
@@ -1024,7 +1024,7 @@
 
 .review-image-4 {
     
-    background-image: url("../images/me-page/S3-SIDE-ON-75%-1920-1080.jpg");
+    background-image: url("../images/me-page/S3-SIDE-ON-75-1920-1080.jpg");
     background-attachment: fixed;
     background-position: 45% 0%;
     background-size: cover;
@@ -1124,7 +1124,7 @@
     padding-bottom: 25px;
     opacity: 0;
     animation-name: fade-up;
-    animation-delay: 0.5s;
+    animation-delay: 2.5s;
     animation-duration: 0.8s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
@@ -1160,10 +1160,9 @@
     font-size: 32px;
     color: #000000a4;
     opacity; 0;
-
-   
+    
     animation-name: arrow-down;
-    animation-delay: 0.5s;
+    animation-delay: 2.5s;
     animation-direction: alternate;
     animation-fill-mode: forwards;
     animation-iteration-count: 7;
