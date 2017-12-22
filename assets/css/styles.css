@@ -232,7 +232,6 @@
 .speaker-icon {
 
     opacity: 0;
-    margin-bottom: 0px;
     padding: 14px 10px 6px 10px;
     border: 0.5px solid transparent;
     border-radius: 4px;
@@ -258,10 +257,9 @@
 
 
 .video-icon {
+
     opacity: 0;
-    margin-bottom: 0px;
     padding: 7px 14.5px;
-    
     border: 0.5px solid transparent;
     border-radius: 4px;
     display: block;
@@ -860,12 +858,12 @@
 
 /*-------------- ABOUT ME PAGE STYLES--------------*/
 
-.me-main-wrapper {
+/*.me-main-wrapper {
     
         height: 100vh;
         width: 100vw;
         
-    }
+    }*/
     
 
 .bio-image-background {
@@ -1122,13 +1120,7 @@
 
     padding-top: 25px;
     padding-bottom: 25px;
-    opacity: 0;
-    animation-name: fade-up;
-    animation-delay: 2.5s;
-    animation-duration: 0.8s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
+   
 }
 
 /*----------------------------------------------------------*/
@@ -1158,8 +1150,8 @@
     left: 50%;
     transform: translateX(-50%);
     font-size: 32px;
-    color: #000000a4;
-    opacity; 0;
+    color: #555454;
+    
     
     animation-name: arrow-down;
     animation-delay: 2.5s;
@@ -1294,7 +1286,10 @@
             
         }
 
-    
+        /*.bio-section {
+
+            height: 140vh;
+        }*/
 
         .bio-image {
             
@@ -1420,6 +1415,13 @@
     .bio-section {
         
        height: 40vh;
+       opacity: 0;
+       animation-name: fade-up;
+       animation-delay: 2.5s;
+       animation-duration: 0.8s;
+       animation-fill-mode: forwards;
+       animation-iteration-count: 1;
+       animation-timing-function: ease-in;
 
     }
 
@@ -1474,7 +1476,7 @@
 
     to {
 
-        width: 45%; 
+        width: 35%; 
         border: 0.5px solid rgba(255, 255, 255, 0.28);
 
     }
