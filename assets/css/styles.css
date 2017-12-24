@@ -172,8 +172,8 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    height: 60%;
-    width: 60%;
+    height: 40%;
+    width: 40%;
     /*margin-bottom: 50px;*/
 
 }
@@ -529,7 +529,7 @@
 }
 
 .nav-links {
-    
+        margin-top: 0px;
         opacity: 0;
         animation-name: fade-up;
         animation-timing-function: ease-in;
@@ -550,8 +550,8 @@
 .dropdown-menu {
 
     position: absolute;
-    top: 20px;
-    left: 5px;
+    top: 36px;
+    left: 0px;
     z-index: 1000;
     display: block;
     float: left;
@@ -565,9 +565,31 @@
     transform-origin: top;
     transform: scale(1, 0);
     opacity: 0;
+    padding-left: 5px;
     
 }
 
+  .dropdown-menu-me {
+  
+    position: absolute;
+    top: 36px;
+    left: 0px;
+    z-index: 1000;
+    display: block;
+    float: left;
+    min-width: 120px;
+    padding: 5px 0;
+    list-style: none;
+    font-size: 14px;
+    background-color: #ffffffd9;
+    border: none;
+    box-shadow: none;
+    transform-origin: top;
+    transform: scale(1, 0);
+    opacity: 0;
+    border-radius: 6px;
+    padding-left: 5px;
+}
 
 .open > .dropdown-menu {
 
@@ -949,7 +971,7 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 50px;
+    width: 30px;
     height: 1px;
     background: #000000;
 
@@ -962,7 +984,7 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 150px;
+    width: 110px;
     height: 1px;
     background: #000000;
 
@@ -976,7 +998,7 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 100px;
+    width: 70px;
     height: 1px;
     background: #000000;
 
@@ -1141,6 +1163,14 @@
     transform: translateX(-50%);
     font-size: 32px;
     color: #000000a4;
+    
+    animation-name: arrow-down-mobile;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 7;
+    animation-timing-function: cubic-bezier(.67,.35,.61,.15);
+    animation-duration: 0.6s;
 }
 
 .scroll-arrow-desktop-container {
@@ -1311,7 +1341,7 @@
         .bio-image-background {
             
             background-attachment: scroll;
-            height: 88vh;
+            height: 94.5vh;
             
         }
 
@@ -1374,6 +1404,11 @@
            
             padding-bottom: 25px;
         }*/
+        
+        .bio-article-wording {
+            
+                padding-bottom: 50px;
+        }
          
     }
 
@@ -1411,8 +1446,8 @@
      
     .bio-section {
 
-        height: 25vh;
-        padding-bottom: 25px;
+        height: 30vh;
+        
     }
         
 
@@ -1436,7 +1471,7 @@
 
     .bio-article-wording {
 
-        padding-bottom: 25px;
+        padding-bottom: 50px;
     }
     .article-container {
         
@@ -1452,13 +1487,13 @@
 
     .bio-image {
         padding-top: 0px;
-        height:50vh;
+        height:40vh;
             
     }    
     
     .bio-section {
        padding-top: 0px; 
-       height: 50vh;
+       height: 60vh;
        opacity: 0;
        animation-name: fade-up;
        animation-delay: 2.5s;
@@ -1490,9 +1525,28 @@
     
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1500px) {
 
+         .bio-image {
+        padding-top: 0px;
+        height:50vh;
+            
+    }    
     
+        .bio-section {
+           padding-top: 0px; 
+           height: 50vh;
+           opacity: 0;
+           animation-name: fade-up;
+           animation-delay: 2.5s;
+           animation-duration: 0.8s;
+           animation-fill-mode: forwards;
+           animation-iteration-count: 1;
+           animation-timing-function: ease-in;
+    
+        }
+
+        
 }
     
 
@@ -1557,6 +1611,21 @@
 
         top: 65%; 
        
+
+    }
+}
+
+@keyframes arrow-down-mobile {
+    
+    from {
+
+        top: 85vh;
+        
+    }
+
+    to {
+
+        top: 90vh;
 
     }
 }
