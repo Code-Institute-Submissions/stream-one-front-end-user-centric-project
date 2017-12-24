@@ -906,6 +906,14 @@
     background-size: contain;
     height: 95vh;
     width: 100vw;
+    opacity: 0;
+    
+    animation-name: fade-up;
+    animation-delay: 0.5s;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
     
     
 }
@@ -1178,6 +1186,7 @@
     position: absolute;
     top: 90vh;
     height: 5vh;
+    z-index: -1;
 }
 .scroll-arrow-desktop {
     
@@ -1188,6 +1197,7 @@
     transform: translateX(-50%);
     font-size: 32px;
     color: #555454;
+    
     
     
     animation-name: arrow-down;
@@ -1603,7 +1613,7 @@
     
     from {
 
-        top: 0%;
+        top: 10%;
         
     }
 
