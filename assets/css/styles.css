@@ -178,24 +178,36 @@
 
 }
 
+.home-icon-fill {
+
+    display: none;
+}
 .home-icon {
-    
-    transform: scale(1.0);
-    transition: transform 0.3s cubic-bezier(.83,.18,.35,.77);
+
     opacity: 0;
     animation-name: fade-up;
     animation-timing-function: ease-in;
     animation-duration: 0.5s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    animation-iteration-count: 1;
+    animation-iteration-count: 1;*/
 
 }
 
+.home-icon-fill {
 
-.home-icon:hover {
+    position: absolute;
+    display: inline-block;
+    left: 15px;
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(.83,.18,.35,.77);
+}
 
-    transform: scale(1.02);
+.home-image-container a:hover .home-icon-fill,
+.home-image-container a:focus .home-icon-fill {
+
+   opacity: 1; 
+   
 }
 
 .home-image-container {
@@ -1190,8 +1202,8 @@
 }
 .scroll-arrow-desktop {
     
-    display: block;
-    position: absolute;
+   
+    position: relative;
     
     left: 50%;
     transform: translateX(-50%);
@@ -1346,6 +1358,15 @@
 }
 
 
+@media (min-width: 566px) {
+
+    .scroll-arrow-mobile {
+            
+        display: none;
+    }
+}
+
+
 @media (min-width: 667px) {
     
         .bio-image-background {
@@ -1355,10 +1376,6 @@
             
         }
 
-        .scroll-arrow-mobile {
-            
-            display: none;
-    }
 }
 
 
