@@ -1009,8 +1009,8 @@
     background-position: 10% 0%;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     padding: 0;
     margin: 0;
 }
@@ -1023,8 +1023,8 @@
     background-position: 55% 0%;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     padding: 0;
     margin: 0;
 }
@@ -1036,8 +1036,8 @@
     background-position: 45% 0%;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     padding: 0;
     margin: 0;
 }
@@ -1049,8 +1049,8 @@
     background-position: 45% 0%;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     padding: 0;
     margin: 0;
 }
