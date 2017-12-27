@@ -986,7 +986,7 @@
 
 }
 
-.social-media-icons i {
+.social-media-icons a i {
 
     padding: 15px 15px 25px 15px;
     color: #000c;
@@ -1000,14 +1000,16 @@
 
 }
 
-.social-media-icons i:hover,
-.social-media-icons i:focus {
+.social-media-icons a i:hover,
+.social-media-icons a i:focus {
     
     -webkit-transform: scale(1.2);
     
         -ms-transform: scale(1.2);
     
             transform: scale(1.2);
+
+                color: #000c;
 
 }
 
@@ -1016,7 +1018,7 @@
 .social-media-icons a:hover,
 .social-media-icons a:focus {
 
-    color: #000c;
+    
     text-decoration: none;
 
 }
