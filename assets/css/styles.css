@@ -599,7 +599,7 @@
     transform-origin: top;
     transform: scale(1, 0);
     opacity: 0;
-    border-radius: 6px;
+    border-radius: 0px 0px 6px 6px;
     padding-left: 5px;
 }
 
@@ -907,8 +907,8 @@
     background-position: 35% 0%;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 95vh;
+    background-size: cover;
+    height: 94.5vh;
     width: 100vw;
     opacity: 0;
     
@@ -1322,23 +1322,31 @@
 }
 
 
-@media (min-width: 566px) {
+@media (min-width: 576px) {
 
     .scroll-arrow-mobile {
             
         display: none;
+    }
+
+    .bio-image-background {
+            
+        background-size: contain;
+        background-attachment: scroll;
+        height: 94.5vh;
+        
     }
 }
 
 
 @media (min-width: 667px) {
     
-        .bio-image-background {
+        
+
+       /* .bio-image {
             
-            background-attachment: scroll;
-            height: 94.5vh;
-            
-        }
+            height: 94.5vh;      
+        }*/
 
 }
 
