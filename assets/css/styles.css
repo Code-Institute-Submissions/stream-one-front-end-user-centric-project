@@ -1005,7 +1005,7 @@
 .my-approach-image-1 {
 
     background-image: url("../images/me-page/record-technology-equipment-microphone-mic-studio-775481-pxhere.com.1920-1080-75.jpg");
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: 10% 0%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1016,7 +1016,7 @@
 .my-approach-image-2 {
     
     background-image: url("../images/me-page/microphone-mic-studio-775481-pxhere.com.-1920-1080-75.jpg");
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: 55% 0%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1027,7 +1027,7 @@
 .review-image-3 {
     
     background-image: url("../images/me-page/laptop-notebook-music-light-controller-microphone-847252-pxhere.com-1920-1080-75.jpg");
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: 45% 0%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1038,7 +1038,7 @@
 .review-image-4 {
     
     background-image: url("../images/me-page/S3-SIDE-ON-75-1920-1080.jpg");
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: 45% 0%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1218,6 +1218,11 @@
 
 @media (min-width: 992px) {
 
+    .background-image {
+
+        background-attachment: fixed;
+    }
+
     .nav-links {
 
         list-style: none;
@@ -1387,6 +1392,14 @@
         
         margin-left:0%;
        
+    }
+
+    .my-approach-image-1,
+    .my-approach-image-2,
+    .review-image-3,
+    .review-image-4 {
+
+        background-attachment: fixed;
     }
         
 }
