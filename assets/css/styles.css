@@ -905,7 +905,7 @@
     margin-right: 0px;
     background-image: url("../images/me-page/rachel-boot-repaired.jpg");
     background-position: 35% 0%;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: contain;
     height: 95vh;
@@ -1011,7 +1011,10 @@
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
+    padding: 0;
+    margin: 0;
 }
+
 
 .my-approach-image-2 {
     
@@ -1022,6 +1025,8 @@
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
+    padding: 0;
+    margin: 0;
 }
 
 .review-image-3 {
@@ -1033,6 +1038,8 @@
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
+    padding: 0;
+    margin: 0;
 }
 
 .review-image-4 {
@@ -1044,6 +1051,8 @@
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
+    padding: 0;
+    margin: 0;
 }
 
 
