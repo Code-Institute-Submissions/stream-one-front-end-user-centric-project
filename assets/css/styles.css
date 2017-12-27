@@ -1438,11 +1438,7 @@
 
 @media (min-width: 992px) {
 
-    .background-image {
-
-        background-attachment: fixed;
-    }
-
+   
     .nav-links {
 
         list-style: none;
@@ -1524,6 +1520,15 @@
                 transform: scale(1.0);
 
     }
+}
+
+@media (min-width: 1200px) {
+
+    .background-image {
+
+        background-attachment: fixed;
+    }
+
 }
 
 
