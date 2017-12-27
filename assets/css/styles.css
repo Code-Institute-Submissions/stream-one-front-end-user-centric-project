@@ -972,7 +972,7 @@
 .footer-links:hover,
 .footer-links:focus {
 
-    color: #000;
+    color: #363636;
     text-decoration: none;
     font-weight: 400;
 
@@ -989,7 +989,7 @@
 .social-media-icons a i {
 
     padding: 15px 15px 25px 15px;
-    color: #000c;
+    color: #363636;
     -webkit-transform: scale(1.0);
         -ms-transform: scale(1.0);
             transform: scale(1.0);
@@ -1009,7 +1009,7 @@
     
             transform: scale(1.2);
 
-                color: #000c;
+                color: #000;
 
 }
 
