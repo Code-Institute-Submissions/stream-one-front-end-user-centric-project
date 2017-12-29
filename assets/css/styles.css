@@ -41,7 +41,6 @@
 
 .row-layout {
 
-    
     margin: 0px;
 }
 
@@ -858,7 +857,32 @@
 
     
 /*-------------------------------- MAIN PAGE VIDEO SECTION ----------------------------------*/
+.video-heading-container {
 
+    margin-bottom:25px;
+    border-radius: 4px;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 150px;
+    border: 0.5px solid #ebe9e9;
+
+}
+
+.video-reel-title {
+    
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    text-align: center;
+    color: #ebe9e9;
+}
+  
 .video-title-container {
 
     padding-bottom: 5px;
@@ -867,7 +891,7 @@
 .video-title {
 
     font-family: 'Barlow Semi Condensed', sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     letter-spacing: 1px;
     font-size: 15px;
     margin-bottom: 6px;
@@ -1066,7 +1090,7 @@
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 94.5vh;
+    height: 90.5vh;
     width: 100vw;
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1389,35 +1413,96 @@
 /*-------------- LOCATE-ME-PAGE -----------------------------*/
 .locate-me-mobile-image {
 
-    background-image:url();
+    background-image: url("../images/locate-me-page/BonVolks-Build5-optimised.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: 35% 0%;
+    width: 100vw;
+    height: 94.5vh;
+
 }
+
+.locate-me-background-image-mask {
+
+    background-color: rgba(0,0,0,0.3);
+    height: 94.5vh;
+    width: 100vw;
+}
+
 .locate-me-background-image {
 
 
 }
 
+.bonvolks-logo-container {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 30%;
+    background-color: rgba(255, 255, 255, 0.86);
+   
+
+}
+.bonvolks-logo {
+
+    background-image: url("../images/locate-me-page/static1.squarespace.com.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.map-wrapper {
+    width: 100vw;
+    background-color: #181818ab;
+
+}
 .map-container {
     left: 10vw;
     width: 80vw;
     height: 50vh;
+    
 }
 .map-container iframe {
-
-    width:100%;
-    height:100%;
+    position: relative;
+    top: 10%;
+    width: 100%;
+    height: 80%;
 }
 
 .locate-me-article-section-wrapper {
+
     padding-top: 25px;
-    height: 75vh;
-    width: 100vw;
+    padding-bottom: 25px;
+   
 }
+
+.locate-me-heading-underline:after {
+
+        content:'';
+        display: block;
+        position: relative;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+        width: 86px;
+        height: 1px;
+        background: #000000;
+
+}
+
+
 
 .locate-me-article-wording p {
 
     margin-top: 0px;
-
-
+   
 
 }
 
@@ -1667,11 +1752,11 @@
 
         padding-bottom: 50px;
     }
-    .article-container {
+    /*.article-container {
         
-        margin-left:0%;
+        margin-left: 0%;
        
-    }
+    }*/
 
     
 }
@@ -1753,7 +1838,45 @@
         
 }
     
+/*------------------- LOCATE ME PAGE MEDIA QUERIES -----------*/
 
+@media (min-width: 667px) {
+
+    .map-container {
+        
+        width: 80vw;
+        height: 100vh;
+    }
+    
+}
+
+@media (min-width: 768px) {
+
+    .locate-me-mobile-image {
+
+        height: 96.5vh;
+    
+    }
+
+    .map-container {
+        
+        height: 50vh;
+    }
+    
+}
+
+@media (min-width: 992px) {
+
+    .bonvolks-logo-container {
+
+        display: hidden;
+    }
+
+    .map-container {
+        
+        height: 100vh;
+    }
+}
 
     /*-------------- ANIMATIONS -------------------------*/
 
