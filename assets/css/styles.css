@@ -1852,7 +1852,8 @@
 
 @media (min-width: 768px) {
 
-    .locate-me-mobile-image {
+    .locate-me-mobile-image,
+    .locate-me-background-image-mask {
 
         height: 96.5vh;
     
@@ -1867,16 +1868,84 @@
 
 @media (min-width: 992px) {
 
-    .bonvolks-logo-container {
 
-        display: hidden;
+    .locate-me-mobile-image {
+
+        background-attachment: fixed;
+        
+    }
+    
+    .map-wrapper {
+
+        background-color: #fff;
+    }
+    .map-container {
+        left: 0vw;
+        width: 50vw;
+        height: 540px;
+    }
+
+    .map-container iframe {
+        position: relative;
+       
+        left: 15%;
+        width: 70%;
+        height: 80%;
+    }
+
+    .locate-me-article-section-wrapper {
+        
+        height: 540px;
+        
+    
+    }
+
+    .heading-and-article-position {
+  
+        position: relative;
+        top: 40px;
+        
+        
+   
+    }
+
+}
+
+/*@media (min-width: 1200px) {
+
+    .locate-me-article-section-wrapper {
+        
+        height: 540px;
+        
+    
     }
 
     .map-container {
-        
-        height: 100vh;
+        left: 0vw;
+        width: 50vw;
+        height: 540px;
     }
-}
+
+    .map-container iframe {
+        position: relative;
+       
+        left: 15%;
+        width: 70%;
+        height: 80%;
+    }
+
+    .heading-and-article-position {
+  
+        position: relative;
+        top: 40px;
+        
+        
+   
+    }
+
+    
+
+}*/
 
     /*-------------- ANIMATIONS -------------------------*/
 
