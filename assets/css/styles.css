@@ -1207,7 +1207,12 @@
     padding-right: 0px;
 }
 
+.me-page-image-mask {
 
+    background-color: rgba(0, 0, 0, 0.33);
+    height: 100vh;
+    width: 100vw;
+}
 .my-approach-image-1 {
 
     background-image: url("../images/me-page/record-technology-equipment-microphone-mic-studio-775481-pxhere.com.1920-1080-75.jpg");
@@ -1372,16 +1377,13 @@
 
 .scroll-arrow-desktop-container {
 
-    position: absolute;
-    top: 90vh;
-    height: 5vh;
-    z-index: -1;
+    position: relative;
+    height: 50px;
+    
 }
 .scroll-arrow-desktop {
-    
-   
-    position: relative;
-    
+
+    position: relative;  
     left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
@@ -1523,13 +1525,29 @@
 
 .book-me-background-image {
 
-    background-image: url("../images/book-me-page/s3-top-down-960-540.jpg");
+    background-image: url("../images/book-me-page/s3-side-on-960-540.jpg");
     background-attachment: scroll;
-    background-position: 50% 0%;
+    background-position: 20% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
     height: 94.5vh;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    
+    -webkit-animation-name: fade-up;
+    
+            animation-name: fade-up;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
 }
 
 .book-me-background-image-mask {
@@ -1993,7 +2011,7 @@
 
     .bio-article-wording {
 
-        padding-bottom: 50px;
+        padding-bottom: 20px;
     }
     /*.article-container {
         
@@ -2059,7 +2077,7 @@
     }    
     
         .bio-section {
-           padding-top: 0px; 
+           padding-top: 25px; 
            height: 50vh;
            opacity: 0;
            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -2193,8 +2211,8 @@
 @media (min-width: 768px) {
     .book-me-background-image {
 
-        background-image: url("../images/book-me-page/s3-top-down-1920-1080.jpg");
-        background-attachment: fixed;
+        background-image: url("../images/book-me-page/s3-side-on-1920-1080.jpg");
+        
     }
     .book-me-background-image,
     .book-me-background-image-mask {
@@ -2205,6 +2223,13 @@
 }
 
 @media (min-width: 992px) {
+
+    .book-me-background-image {
+
+       
+        background-attachment: fixed;
+        background-position: 50% 50%;
+    }
 
     .book-me-article-section-wrapper {
 
