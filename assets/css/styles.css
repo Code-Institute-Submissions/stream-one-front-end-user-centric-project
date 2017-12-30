@@ -1413,7 +1413,7 @@
 }
 
 /*-------------- LOCATE-ME-PAGE -----------------------------*/
-.locate-me-mobile-image {
+.locate-me-background-image {
 
     background-image: url("../images/locate-me-page/BonVolks-Build5-optimised.jpg");
     background-repeat: no-repeat;
@@ -2113,7 +2113,7 @@
 
 @media (min-width: 768px) {
 
-    .locate-me-mobile-image,
+    .locate-me-background-image,
     .locate-me-background-image-mask {
 
         height: 96.5vh;
@@ -2129,12 +2129,6 @@
 
 @media (min-width: 992px) {
 
-
-    .locate-me-mobile-image {
-
-        background-attachment: fixed;
-        
-    }
     
     .map-wrapper {
 
@@ -2157,6 +2151,7 @@
     .locate-me-article-section-wrapper {
         
         height: 540px;
+        padding-top: 70px;
         
     
     }
@@ -2206,6 +2201,15 @@
 
 }*/
 
+@media (min-width: 1200px) {
+
+    .locate-me-background-image {
+
+        background-attachment: fixed;
+        
+    }
+}
+
 /*-------------------- BOOK-ME PAGE MEDIA QUERIES ---------*/
 
 @media (min-width: 768px) {
@@ -2226,8 +2230,6 @@
 
     .book-me-background-image {
 
-       
-        background-attachment: fixed;
         background-position: 50% 50%;
     }
 
@@ -2251,6 +2253,12 @@
 }
 
 @media (min-width: 1200px) {
+
+    .book-me-background-image {
+
+        background-attachment: fixed;
+       
+    }
 
     .calender-container a {
 
