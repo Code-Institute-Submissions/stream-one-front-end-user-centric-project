@@ -1525,7 +1525,7 @@
 
 .book-me-background-image {
 
-    background-image: url("../images/book-me-page/s3-side-on-960-540.jpg");
+    background-image: url("../images/book-me-page/s3-top-down-960-540.jpg");
     background-attachment: scroll;
     background-position: 20% 50%;
     background-repeat: no-repeat;
@@ -2211,7 +2211,7 @@
 @media (min-width: 768px) {
     .book-me-background-image {
 
-        background-image: url("../images/book-me-page/s3-side-on-1920-1080.jpg");
+        background-image: url("../images/book-me-page/s3-top-down-1920-1080.jpg");
         
     }
     .book-me-background-image,
