@@ -49,7 +49,7 @@
 
 .background-image {
 
-    background-image: url("../images/Background-Image-Optimized-960-540.jpg");
+    background-image: url("../images/home-page/Background-Image-Optimized-960-540.jpg");
     background-position: 50% 0%;
     background-attachment: scroll;
     background-size: cover;
@@ -1805,7 +1805,7 @@
     
     .background-image {
         
-        background-image: url("../images/Background-Image-Optimized-80percent-1920-1080.jpg");
+        background-image: url("../images/home-page/Background-Image-Optimized-80percent-1920-1080.jpg");
         opacity: 0;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
         -webkit-animation-name: fade-up;
