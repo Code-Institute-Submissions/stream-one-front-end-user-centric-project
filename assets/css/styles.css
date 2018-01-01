@@ -65,8 +65,8 @@
             animation-timing-function: ease-in;
     -webkit-animation-duration: 0.5s;
             animation-duration: 0.5s;
-    -webkit-animation-delay: 1s;
-            animation-delay: 1s;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     -webkit-animation-iteration-count: 1;
@@ -207,8 +207,8 @@
             animation-timing-function: ease-in;
     -webkit-animation-duration: 0.5s;
             animation-duration: 0.5s;
-    -webkit-animation-delay: 2s;
-            animation-delay: 2s;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     -webkit-animation-iteration-count: 1;
@@ -254,8 +254,8 @@
         -ms-transform: translateY(-100%);
             transform: translateY(-100%);
     padding-left: 75%;
-    -webkit-transition: top 0.5s cubic-bezier(.83,.18,.35,.77);
-    transition: top 0.5s cubic-bezier(.83,.18,.35,.77);
+   /* -webkit-transition: top 0.5s cubic-bezier(.83,.18,.35,.77);
+    transition: top 0.5s cubic-bezier(.83,.18,.35,.77);*/
 }
 
 
@@ -267,19 +267,20 @@
         -ms-transform: translateY(-100%);
             transform: translateY(-100%);
     padding-right: 75%;
-    -webkit-transition: top 0.5s cubic-bezier(.83,.18,.35,.77);
-    transition: top 0.5s cubic-bezier(.83,.18,.35,.77);
+   /* -webkit-transition: top 0.5s cubic-bezier(.83,.18,.35,.77);
+    transition: top 0.5s cubic-bezier(.83,.18,.35,.77);*/
 }
 
 
 
-.speaker-icon {
+.speaker-icon,
+.video-icon {
 
-    -webkit-transform: scale(1.0);
+    /*-webkit-transform: scale(1.0);
 
         -ms-transform: scale(1.0);
 
-            transform: scale(1.0);
+            transform: scale(1.0);*/
     display: block;
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -287,16 +288,16 @@
     
    
     margin: 0 auto;
-    -webkit-transition: all 0.5s cubic-bezier(.83,.18,.35,.77);
-    transition: all 0.5s cubic-bezier(.83,.18,.35,.77);
+    -webkit-transition: border 0.5s cubic-bezier(.83,.18,.35,.77);
+    transition: border 0.5s cubic-bezier(.83,.18,.35,.77);
     -webkit-animation-name: fade-up;
             animation-name: fade-up;
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in;
     -webkit-animation-duration: 0.5s;
             animation-duration: 0.5s;
-    -webkit-animation-delay: 3s;
-            animation-delay: 3s;
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     -webkit-animation-iteration-count: 1;
@@ -304,7 +305,7 @@
     
 }
 
-.speaker-icon:hover,
+/*.speaker-icon:hover,
 .speaker-icon:focus {
     
     -webkit-transform: scale(1.05);
@@ -314,13 +315,13 @@
             transform: scale(1.05);
     
 
-}
+}*/
 
 
 
-.video-icon {
+/*.video-icon {
 
-    -webkit-transform: scale(1.0);
+    /*-webkit-transform: scale(1.0);
 
         -ms-transform: scale(1.0);
 
@@ -332,11 +333,11 @@
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     padding: 0px 0px 0px 0px;
     
-    border-radius: 4px;
+    /*border-radius: 4px;
     
     margin: 0 auto;
-    -webkit-transition: all 0.5s cubic-bezier(.83,.18,.35,.77);
-    transition: all 0.5s cubic-bezier(.83,.18,.35,.77);
+    -webkit-transition: border 0.5s cubic-bezier(.83,.18,.35,.77);
+    transition: border 0.5s cubic-bezier(.83,.18,.35,.77);
 
     -webkit-animation-name: fade-up;
 
@@ -345,16 +346,16 @@
             animation-timing-function: ease-in;
     -webkit-animation-duration: 0.5s;
             animation-duration: 0.5s;
-    -webkit-animation-delay: 2.5s;
-            animation-delay: 2.5s;
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     -webkit-animation-iteration-count: 1;
             animation-iteration-count: 1;
     
-}
+}*/
 
-.video-icon:hover,
+/*.video-icon:hover,
 .video-icon:focus {
     
     -webkit-transform: scale(1.05);
@@ -364,26 +365,40 @@
             transform: scale(1.05);
     
 
-}
+}*/
 
  
 .icon-underline {
 
     padding: 0px;
-    width: 0%;
-    border: 0.5px solid transparent;
+    width: 35%;
+    opacity: 0;
+    -webkit-animation-name: fade-up;
+
+    animation-name: fade-up;
+-webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+-webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+-webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+-webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+-webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+   /* border: 0.5px solid transparent;
     -webkit-animation-name: underline-mobile;
             animation-name: underline-mobile;
     -webkit-animation-timing-function:cubic-bezier(.83,.18,.35,.77);
             animation-timing-function:cubic-bezier(.83,.18,.35,.77);
     -webkit-animation-duration: 0.3s;
             animation-duration: 0.3s;
-    -webkit-animation-delay: 4.0s;
-            animation-delay: 4.0s;
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
+            animation-iteration-count: 1;*/
 } 
 
 
@@ -476,7 +491,7 @@
 
 }
 
-.link-item {
+/*.link-item {
 
     color: #ffffff;
     text-decoration: none;
@@ -496,7 +511,7 @@
     opacity: 1.0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     
-}
+}*/
 
 
 .link-underline {
@@ -532,8 +547,8 @@
     text-decoration: none;
     opacity: 0.9;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
-    -webkit-transition: all 0.5s cubic-bezier(.83,.18,.35,.77);
-    transition: all 0.5s cubic-bezier(.83,.18,.35,.77)
+    -webkit-transition: opacity 0.5s cubic-bezier(.83,.18,.35,.77);
+    transition: opacity 0.5s cubic-bezier(.83,.18,.35,.77)
         
 }
 
@@ -562,8 +577,8 @@
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     background: rgb(0, 0, 0);
-    -webkit-transition: all 0.5s cubic-bezier(.83,.18,.35,.77);
-    transition: all 0.5s cubic-bezier(.83,.18,.35,.77)
+    -webkit-transition: opacity 0.5s cubic-bezier(.83,.18,.35,.77);
+    transition: opacity 0.5s cubic-bezier(.83,.18,.35,.77)
 }
 
 .link-underline-me:hover:after,
@@ -648,8 +663,8 @@
                 animation-timing-function: ease-in;
         -webkit-animation-duration: 0.5s;
                 animation-duration: 0.5s;
-        -webkit-animation-delay: 2s;
-                animation-delay: 2s;
+        -webkit-animation-delay: 0.5s;
+                animation-delay: 0.5s;
         -webkit-animation-fill-mode: forwards;
                 animation-fill-mode: forwards;
         -webkit-animation-iteration-count: 1;
@@ -760,8 +775,8 @@
             animation-timing-function: ease-in;
     -webkit-animation-duration: 0.5s;
             animation-duration: 0.5s;
-    -webkit-animation-delay: 2s;
-            animation-delay: 2s;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     -webkit-animation-iteration-count: 1;
@@ -1078,7 +1093,7 @@
     
 }
 
-/*-------------- ABOUT ME PAGE STYLES--------------*/
+/*--------------  ME PAGE STYLES--------------*/
 
 .bio-image-background {
 
@@ -1347,7 +1362,7 @@
 
 
 
-.scroll-arrow-mobile {
+/*.scroll-arrow-mobile {
     
     position: relative;
     top: 90vh;
@@ -1373,7 +1388,7 @@
             animation-timing-function: cubic-bezier(.67,.35,.61,.15);
     -webkit-animation-duration: 0.6s;
             animation-duration: 0.6s;
-}
+}*/
 
 .scroll-arrow-desktop-container {
 
@@ -1398,8 +1413,8 @@
     
     
             animation-name: arrow-down;
-    -webkit-animation-delay: 2.5s;
-            animation-delay: 2.5s;
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
     -webkit-animation-direction: alternate;
             animation-direction: alternate;
     -webkit-animation-fill-mode: forwards;
@@ -1430,8 +1445,8 @@
             animation-timing-function: ease-in;
     -webkit-animation-duration: 0.5s;
             animation-duration: 0.5s;
-    -webkit-animation-delay: 1s;
-            animation-delay: 1s;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     -webkit-animation-iteration-count: 1;
@@ -1814,8 +1829,8 @@
                 animation-timing-function: ease-in;
         -webkit-animation-duration: 0.5s;
                 animation-duration: 0.5s;
-        -webkit-animation-delay: 1s;
-                animation-delay: 1s;
+        -webkit-animation-delay: 0.5s;
+                animation-delay: 0.5s;
         -webkit-animation-fill-mode: forwards;
                 animation-fill-mode: forwards;
         -webkit-animation-iteration-count: 1;
@@ -1862,19 +1877,20 @@
 
     .icon-underline {
         width: 25%;
-        -webkit-animation-name: underline;
+
+       /* -webkit-animation-name: underline;
                 animation-name: underline;
-        -webkit-animation-timing-function: cubic-bezier(.83,.18,.35,.77);
-                animation-timing-function: cubic-bezier(.83,.18,.35,.77);
+        -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
         -webkit-animation-duration: 0.3s;
                 animation-duration: 0.3s;
-        -webkit-animation-delay: 4.0s;
-                animation-delay: 4.0s;
+        -webkit-animation-delay: 1.5s;
+                animation-delay: 1.5s;
         -webkit-animation-fill-mode: forwards;
                 animation-fill-mode: forwards;
         -webkit-animation-iteration-count: 1;
                 animation-iteration-count: 1;
-        
+        */
     } 
 
     .video-wrapper {
@@ -1903,9 +1919,9 @@
     .speaker-icon:focus {
     
         border: 0.5px solid #ffffffc2;
-        -webkit-transform: scale(1.0);
+       /* -webkit-transform: scale(1.0);
             -ms-transform: scale(1.0);
-                transform: scale(1.0);
+                transform: scale(1.0);*/
 
     }
 
@@ -1913,9 +1929,9 @@
     .video-icon:focus {
     
         border: 0.5px solid #ffffffc2;
-        -webkit-transform: scale(1.0);
+        /*-webkit-transform: scale(1.0);
             -ms-transform: scale(1.0);
-                transform: scale(1.0);
+                transform: scale(1.0);*/
 
     }
 }
@@ -2055,8 +2071,8 @@
        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
        -webkit-animation-name: fade-up;
                animation-name: fade-up;
-       -webkit-animation-delay: 2.5s;
-               animation-delay: 2.5s;
+       -webkit-animation-delay: 1.5s;
+               animation-delay: 1.5s;
        -webkit-animation-duration: 0.8s;
                animation-duration: 0.8s;
        -webkit-animation-fill-mode: forwards;
@@ -2095,12 +2111,12 @@
         .bio-section {
            padding-top: 25px; 
            height: 50vh;
-           opacity: 0;
+           /*opacity: 0;
            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
            -webkit-animation-name: fade-up;
                    animation-name: fade-up;
-           -webkit-animation-delay: 2.5s;
-                   animation-delay: 2.5s;
+           -webkit-animation-delay: 1.5s;
+                   animation-delay: 1.5s;
            -webkit-animation-duration: 0.8s;
                    animation-duration: 0.8s;
            -webkit-animation-fill-mode: forwards;
@@ -2108,7 +2124,7 @@
            -webkit-animation-iteration-count: 1;
                    animation-iteration-count: 1;
            -webkit-animation-timing-function: ease-in;
-                   animation-timing-function: ease-in;
+                   animation-timing-function: ease-in;*/
     
         }
 
@@ -2326,17 +2342,17 @@
     }
 }
 
-@-webkit-keyframes underline {
+/*@-webkit-keyframes underline {
 
     from {
 
-        width: 0%;
+      
         border: 0.5px solid transparent;
     }
 
     to {
 
-        width: 25%; 
+        
         border: 0.5px solid rgba(255, 255, 255, 0.28);
 
     }
@@ -2346,13 +2362,13 @@
 
     from {
 
-        width: 0%;
+       
         border: 0.5px solid transparent;
     }
 
     to {
 
-        width: 25%; 
+        
         border: 0.5px solid rgba(255, 255, 255, 0.28);
 
     }
@@ -2362,13 +2378,13 @@
     
     from {
 
-        width: 0%;
+       
         border: 0.5px solid transparent;
     }
 
     to {
 
-        width: 35%; 
+        
         border: 0.5px solid rgba(255, 255, 255, 0.28);
 
     }
@@ -2378,17 +2394,17 @@
     
     from {
 
-        width: 0%;
+      
         border: 0.5px solid transparent;
     }
 
     to {
 
-        width: 35%; 
+     
         border: 0.5px solid rgba(255, 255, 255, 0.28);
 
     }
-}
+}*/
 
 @-webkit-keyframes arrow-down {
     
@@ -2422,7 +2438,7 @@
     }
 }
 
-@-webkit-keyframes arrow-down-mobile {
+/*@-webkit-keyframes arrow-down-mobile {
     
     from {
 
@@ -2450,6 +2466,6 @@
         top: 90vh;
 
     }
-}
+}*/
   
     
