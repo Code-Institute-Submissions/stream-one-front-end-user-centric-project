@@ -302,6 +302,7 @@
     padding: 0px;
     width: 35%;
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     -webkit-animation-name: fade-up;
 
     animation-name: fade-up;
@@ -1335,7 +1336,9 @@
     position: relative;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     width: 100%;
     height: 30%;
     background-color: rgba(255, 255, 255, 0.86);
@@ -1459,7 +1462,9 @@
     position: absolute;
     left: 50vw;
     top: 45vh;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 
@@ -1476,14 +1481,21 @@
     background-color: rgba(255, 255, 255, 0.86);
     border-radius: 10px;
     padding: 30px;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
     
 }
 
 .calender-container a:hover .calender-icon,
 .calender-container a:focus .calender-icon {
 
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+
+        -ms-transform: scale(1.05);
+
+            transform: scale(1.05);
 }
 
 
@@ -1567,7 +1579,9 @@
     position: relative;
     top: 15px;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     width: 150px;
     border: 0.5px solid #ebe9e9;
 }
@@ -1649,7 +1663,9 @@
     display: inline-block;
     position: relative;
     top: 45vh;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     background-color: rgba(255, 255, 255, 0.86);
     border-radius: 10px;
 }
