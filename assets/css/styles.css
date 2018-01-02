@@ -24,7 +24,7 @@
 
 }
 
-.audio-section-layout {}
+
 
 
 .footer-layout {
@@ -46,15 +46,24 @@
 
 
 /*------------------------------ MAIN PAGE BACKGROUND IMAGES -----------------------------*/
+.background-image-wrapper {
 
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .background-image {
 
     background-image: url("../images/home-page/Background-Image-Optimized-960-540.jpg");
     background-position: 50% 0%;
-    background-attachment: scroll;
+    /*background-attachment: scroll;*/
+    z-index: -10;
+    position: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    width: 100vw;
     padding: 0;
     margin: 0;
     opacity:0;
@@ -79,7 +88,8 @@
      height: 100%;
      padding: 0;
      margin: 0;
-     
+     position: fixed;
+     z-index: -9;
 }
 
 /* ----------------------------- MAIN PAGE VIDEO AND AUDIO ------------------------------*/
@@ -237,6 +247,12 @@
 .home-image-container {
 
     margin-top: 5px;
+}
+
+.icon-section-layout {
+
+    height: 100vh;
+    position: relative;
 }
 
 .icon-wrapper {
@@ -814,7 +830,10 @@
 
 /*-------------------------------- MAIN PAGE AUDIO SECTION ----------------------------------*/
 
+.audio-section-wrapper {
 
+    background-color: #fff;
+}
 .audio-title-container {
 
     margin-top: 50px;
@@ -1298,11 +1317,13 @@
 
     background-image: url("../images/locate-me-page/BonVolks-Build5-optimised.jpg");
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    /*background-attachment: scroll;*/
+    z-index: -10;
+    position: fixed;
     background-size: cover;
     background-position: 35% 0%;
     width: 100vw;
-    height: 94.5vh;
+    height: 100vh;
     opacity:0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     -webkit-animation-name: fade-up;
@@ -1323,15 +1344,17 @@
 .locate-me-background-image-mask {
 
     background-color: rgba(0,0,0,0.58);
-    height: 94.5vh;
+    height: 100vh;
     width: 100vw;
 }
 
-.locate-me-background-image {
 
+.bonvolks-logo-wrapper {
 
+    height: 100vh;
+    position: relative;
+    
 }
-
 .bonvolks-logo-container {
     position: relative;
     left: 50%;
@@ -1380,6 +1403,7 @@
 
     padding-top: 25px;
     padding-bottom: 25px;
+    background-color: #fff;
    
 }
 
@@ -1407,18 +1431,23 @@
 
 }
 /*-------------- BOOK-ME PAGE -------------------------------*/
-
+/*.bg-image-wrapper {
+    position: relative;
+    height: 100vh;
+    z-index: -11;
+    
+}*/
 .book-me-background-image {
 
     background-image: url("../images/book-me-page/s3-top-down-960-540.jpg");
-    background-attachment: scroll;
-    /*position: fixed;*/
-    background-position: 20% 50%;
+    /*background-attachment: scroll;*/
+    position: fixed;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    /*z-index: -10;*/
+    z-index: -10;
     width: 100vw;
-    height: 94.5vh;
+    height: 100vh;
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     
@@ -1439,19 +1468,21 @@
 
 .book-me-background-image-mask {
     background-color:rgba(0, 0, 0, 0.58);
-    background-attachment: scroll;
+   /*background-attachment: scroll;*/
+    position: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    height: 94.5vh;
+    height: 100vh;
+    z-index:-9;
 }
 
 .calender-container {
 
     text-align: center;
     padding: 0px;
-    height: 94.5vh;
+    height: 100vh;
     position: relative;
 }
 .calender-container a {
@@ -1523,6 +1554,7 @@
 
     padding-top: 25px;
     padding-bottom: 25px;
+    background-color: #fff;
    
 }
 
@@ -1749,6 +1781,7 @@
 
     .icon-underline {
         width: 25%;
+        
     } 
 
     .video-wrapper {
@@ -1790,10 +1823,10 @@
 
 @media (min-width: 1200px) {
 
-    .background-image {
+   /* .background-image {
 
         background-attachment: fixed;
-    }
+    }*/
 
 }
 
@@ -1961,12 +1994,12 @@
 
 @media (min-width: 768px) {
 
-    .locate-me-background-image,
+   /*.locate-me-background-image,
     .locate-me-background-image-mask {
 
-        height: 96.5vh;
+        height: 100vh;
     
-    }
+    }*/
 
     .map-container {
         
@@ -2009,11 +2042,11 @@
 
 @media (min-width: 1200px) {
 
-    .locate-me-background-image {
+    /*.locate-me-background-image {
 
         background-attachment: fixed;
         
-    }
+    }*/
 }
 
 /*-------------------- BOOK-ME PAGE MEDIA QUERIES ---------*/
@@ -2024,20 +2057,20 @@
         background-image: url("../images/book-me-page/s3-top-down-1920-1080.jpg");
         
     }
-    .book-me-background-image,
+    /*.book-me-background-image,
     .book-me-background-image-mask {
         
-        height: 96.5vh;
+        /*height: 96.5vh;
     
-    }
+    }*/
 }
 
 @media (min-width: 992px) {
 
-    .book-me-background-image {
+    /*.book-me-background-image {
 
         background-position: 50% 50%;
-    }
+    }*/
 
     .book-me-article-section-wrapper {
 
@@ -2062,7 +2095,7 @@
 
     .book-me-background-image {
 
-        background-attachment: fixed;
+       /* background-attachment: fixed;*/
        
     }
 
