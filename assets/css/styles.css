@@ -1543,12 +1543,12 @@
 .book-me-background-image {
 
     background-image: url("../images/book-me-page/s3-top-down-960-540.jpg");
-    /*background-attachment: scroll;*/
-    position: fixed;
+    background-attachment: scroll;
+    /*position: fixed;*/
     background-position: 20% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -10;
+    /*z-index: -10;*/
     width: 100vw;
     height: 94.5vh;
     opacity: 0;
