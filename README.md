@@ -59,6 +59,11 @@ Manual and technical testing of the site was undertaken and passed.
 4. Google Images Advanced
 5. https://pxhere.com/
 6. Font-awesome
+7. Bon-Volks Logo courtesy of http://www.bonvolks.com/
+8. Rachel Boot and Bon-Volks for permission to use assets.
+9. Google Maps
+10. You Tube
+11. www.calendly.com
 
 
 
