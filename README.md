@@ -2,7 +2,7 @@
  
 ## Profile Website for a Voice Over Artist - Rachel Boot
 
-This is a profile website for Rachel Boot, a professional voice-over artist. It is a front-end website that provides a web presence for Rachel which allows her to direct agents and prosepctive clients to. 
+This is a profile website for Rachel Boot, a professional voice-over artist. It is a front-end website that provides a web presence for Rachel which allows her to direct agents and prospective clients to. 
 
 The main aims of the site are: 
 
