@@ -34,7 +34,7 @@ Details of the UX design and research process is available in the repo "supporti
 2. I used Bootstrap for it's grid system ONLY. I created a custom bootstrap css file which excluded any components or bootstrap features I didn't intend on using. The aim of this was to aid in site loading time. 
 3. I used Font-Awesome for social media icons and calender icon. The main navigation icons I created in Illustrator. 
 4. The menu "burger" icon is a Bootstrap drop-down menu with custom styling.
-5. Photographs were a combination of my own, and free to use photos from https://pxhere.com/, in each case photo's were tweaked and optimized in photo-shop before being implimented in the site. 
+5. Photographs were a combination of my own, and free to use photos from https://pxhere.com/, in each case photo's were tweaked and optimized in photoshop before being implimented in the site. 
 
 The aim in minimising Bootstrap usage was to push myself to write as much custom CSS as possible. The purpose of which was to hopefully arrive at an outcome that looks and feels more bespoke than perhaps it otherwise would. 
 
