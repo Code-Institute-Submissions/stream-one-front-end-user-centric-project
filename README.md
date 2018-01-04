@@ -64,6 +64,7 @@ Manual and technical testing of the site was undertaken and passed.
 9. Google Maps
 10. You Tube
 11. www.calendly.com
+12. www.peopleperhour.com
 
 
 
