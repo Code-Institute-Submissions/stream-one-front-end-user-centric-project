@@ -26,7 +26,7 @@ A demo of the site is available [here] (https://darchard1984.github.io/stream-on
 
 ## UX Design
 
-Details of the UX design and research process is available in the repo "supporting-documentation" folder. The documents show how I approached the design of the site using the 5 layers approach. (Strategy, Structure, Scope, Skeleton, Surface). 
+Details of the UX design and research process is available in the repo "documentation" folder. The documents show how I approached the design of the site using the 5 layers approach. (Strategy, Structure, Scope, Skeleton, Surface). 
 
 ## Build Approach
 
