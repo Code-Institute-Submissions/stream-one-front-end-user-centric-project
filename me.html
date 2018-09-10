@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -8,15 +7,11 @@
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"/>
         <link rel="icon" href="assets/images/tab-icon/mic.ico" type="image/ico">
-        <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+        <link rel="stylesheet" href="assets/css/styles.css" type="text/css"/>
+        <script defer type="text/javascript" src="assets/js/main.js"></script>
     </head>
-
-
-
     <body>
-
 <!------------------ Header ------------------------------------------------------------>
-   
         <div class="container-fluid header">
             <div class="row header-layout main-heading-background-color">
                 <div class="hidden-xs hidden-sm col-md-4 col-lg-4 col-xl-4 home-image-container">
@@ -25,25 +20,20 @@
                         <img class="home-icon-fill" src="assets/images/home-page/home_black2_THICK_30px_FILL.png" alt="icon of a house">
                     </a>
                 </div>
-
 <!------------------ Mobile Nav ------------------------------------------------------------>
-
                 <nav class="col-xs-2 col-sm-2 hidden-md hidden-lg hidden-xl dropdown-wrapper">
                     <div class="dropdown">
-
     <!---------------- BOOTSTRAP DROPDOWN WITH CUSTOM CSS BUTTON STYLING -------------------->
-
                         <div class="dropdown-toggle" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <div class="cross-container"> 
-                                    <div class="cross-bars cross-bar-toggle">
-                                            <span class = "sr-only">Toggle navigation</span>   
-                                            <span class = "cross-bar-1"></span>
-                                            <span class = "cross-bar-2"></span>
-                                            <span class = "cross-bar-3"></span> 
-                                    </div>       
+                            <div id="burger-menu" class="cross-container"> 
+                                <div class="cross-bars cross-bar-toggle">
+                                    <span class="sr-only">Toggle navigation</span>   
+                                    <span id="bar-1" class="cross-bar-1"></span>
+                                    <span id="bar-2" class="cross-bar-2"></span>
+                                    <span id="bar-3" class="cross-bar-3"></span> 
+                                </div>       
                             </div> 
                         </div>
-                    
                         <div class="dropdown-menu dropdown-menu-me">
                             <div class="links-container">
                                 <ul class="nav-links">
@@ -64,21 +54,16 @@
                         </div>              
                     </div>  
                 </nav> 
-            
                 <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4 col-xl-4 header-title-layout">
                     <h1 class="main-heading">
                         <span class="heading-bold"> <a href="index.html">RACHEL BOOT</a></span><span class="heading-seperate"> |</span><span class="heading-not-bold"> Voice Over Artist</span>
                     </h1>
                 </div>
-            
-
         <!------------------ Desktop Nav ------------------------------------------------------------>
-
                 <nav class="hidden-xs hidden-sm col-md-4 col-lg-4 col-xl-4">
                     <div class="desktop-links-container">
                         <ul class="nav-links">
                             <li class="link-inline">
-                            <!--- <a class="desktop-link-item" href="index.html"><span class="header-underline">Home</span></a> ---->
                             </li>
                             <li class="link-inline">
                                 <a class="desktop-link-item" href="me.html"><span class="header-underline">Me</span></a>
@@ -94,7 +79,6 @@
                 </nav>  
             </div>                
         </div>
-
             <!------------------ SECTION ------------------------------------------------------------>
         <main>
             <div class="bio-section-container">
@@ -110,7 +94,6 @@
                     </div>
                 </section>
             </div>
-           
             <section class="bio-section ">
                 <div class="container-fluid container-fluid-layout ">
                     <div class="row row-layout bio-article-section-wrapper">
@@ -137,10 +120,7 @@
                         </div>
                     </div>
                 </div>
-                
-        
-        <!--------------------  BIO WORDING PROVIDED BY THE CLIENT -------------------------------->
-                    
+        <!--------------------  BIO WORDING PROVIDED BY THE CLIENT -------------------------------->      
             </section>
         </main>
         <section>
@@ -265,10 +245,7 @@
                 </div>
             </div>
         </section>   
-
         <!--------------------------- FOOTER ---------------------------------------------------->
-
-
         <footer class="container-fluid footer-layout footer-background-color">
             <div class="row footer-top-row">
                 <div class="col-xs-12">
@@ -284,7 +261,6 @@
                     </ul>
                 </div>
             </div>
-
             <div class="row footer-middle-row">
                 <div class="col-xs-12">
                     <ul class="footer-list">
@@ -320,15 +296,8 @@
                     </div>
                 </div>
             </div>
-
         </footer>
-
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        
-
     </body>
-
-
-
 </html>

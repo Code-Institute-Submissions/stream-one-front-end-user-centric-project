@@ -756,6 +756,19 @@
     
 }
 
+.cross-container--clicked-cross-bar-1 {
+
+    width: 50%;
+
+}
+
+.cross-container--clicked-cross-bar-2 {
+
+    width: 80%;
+
+}
+
+
 .cross-container:hover,
 .cross-container:focus {
 
