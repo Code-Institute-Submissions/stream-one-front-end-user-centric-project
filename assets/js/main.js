@@ -7,7 +7,8 @@
     const barTwo = document.getElementById('bar-2');
     const barThree = document.getElementById('bar-3');
 
-    burgerMenu.addEventListener('click', () => {
+
+    burgerMenu.addEventListener('click', function() {
         console.log('click');
         if (burgerMenu.classList.contains('open') == true) {
             console.log(true);
@@ -15,7 +16,9 @@
             barTwo.classList.remove('cross-container--clicked-cross-bar-2');
             barThree.classList.remove('cross-container--clicked-cross-bar-3');
 
-        } else if (burgerMenu.classList.contains('open') == false) {
+        }
+        
+        if (burgerMenu.classList.contains('open') == false) {
 
             console.log(false);
             barOne.classList.add('cross-container--clicked-cross-bar-1');
