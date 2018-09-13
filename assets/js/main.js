@@ -8,7 +8,7 @@
     const barThree = document.getElementById('bar-3');
 
     burgerMenu.addEventListener('click', () => {
-
+        console.log('click');
         if (burgerMenu.classList.contains('open')) {
 
             barOne.classList.remove('cross-container--clicked-cross-bar-1');
