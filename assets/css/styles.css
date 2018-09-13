@@ -699,11 +699,11 @@
     
 }
 
-.cross-container:hover .cross-bar-1 {
+/*.cross-container:hover .cross-bar-1 {
     
     width: 50%;
     
-    }
+    }*/
 
 
 .cross-bar-2 {
@@ -723,12 +723,12 @@
 
 }
 
-.cross-container:hover .cross-bar-2 {
+/*.cross-container:hover .cross-bar-2 {
     
     
     width: 80%;
     
-}
+}*/
 
 .cross-bar-3 {
     
@@ -747,11 +747,11 @@
 
 }
 
-.cross-container:hover .cross-bar-3 {
+/*.cross-container:hover .cross-bar-3 {
     
     width: 70%;
     
-}
+}*/
 
 .cross-container--clicked-cross-bar-1 {
 
