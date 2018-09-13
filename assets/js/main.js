@@ -15,7 +15,7 @@
             barTwo.classList.remove('cross-container--clicked-cross-bar-2');
             barThree.classList.remove('cross-container--clicked-cross-bar-3');
 
-        } else if (console.log(burgerMenu.classList.contains('open')) == false) {
+        } else if (burgerMenu.classList.contains('open') == false) {
 
             barOne.classList.add('cross-container--clicked-cross-bar-1');
             barTwo.classList.add('cross-container--clicked-cross-bar-2');
