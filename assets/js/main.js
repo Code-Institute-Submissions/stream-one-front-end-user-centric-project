@@ -9,14 +9,15 @@
 
     burgerMenu.addEventListener('click', () => {
         console.log('click');
-        if (burgerMenu.classList.contains('open')) {
-
+        if (burgerMenu.classList.contains('open') == true) {
+            console.log(true);
             barOne.classList.remove('cross-container--clicked-cross-bar-1');
             barTwo.classList.remove('cross-container--clicked-cross-bar-2');
             barThree.classList.remove('cross-container--clicked-cross-bar-3');
 
         } else if (burgerMenu.classList.contains('open') == false) {
 
+            console.log(false);
             barOne.classList.add('cross-container--clicked-cross-bar-1');
             barTwo.classList.add('cross-container--clicked-cross-bar-2');
             barThree.classList.add('cross-container--clicked-cross-bar-3');
