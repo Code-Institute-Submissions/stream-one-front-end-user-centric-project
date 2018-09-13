@@ -769,8 +769,7 @@
 }
 
 
-.cross-container:hover,
-.cross-container:focus {
+.cross-container:hover {
 
     cursor: pointer;
 
