@@ -2,7 +2,7 @@
 
     // ADD/REMOVE CLICKED CLASS TO BURGER BARS ON CLICK //
 
-    const burgerMenu = document.getElementById('burger-menu'); 
+    const burgerMenu = document.getElementById('dropdown-wrapper'); 
     const barOne = document.getElementById('bar-1');
     const barTwo = document.getElementById('bar-2');
     const barThree = document.getElementById('bar-3');
