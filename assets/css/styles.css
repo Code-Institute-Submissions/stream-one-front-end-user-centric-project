@@ -570,10 +570,7 @@
 
 
 /* ------------------- BOOTSTRAP DROPDOWN MENU CUSTOM STYLING ---------*/
-#dropdown {
 
-    z-index: 1000;
-}
 .dropdown-menu {
 
     position: absolute;
