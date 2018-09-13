@@ -49,7 +49,7 @@ Manual and technical testing of the site was undertaken and passed.
 
 ## Authors
 
-**Dafydd Archard** this site was created as part of Code Institute's Web Development Online Full-Stack Course in December 2017.
+**Dafydd Archard** - this site was created as part of Code Institute's Web Development Online Full-Stack Course in December 2017.
 
 ## Acknowledgments
 
