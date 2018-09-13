@@ -11,13 +11,13 @@
     dropdownContainer.addEventListener('click', () => {
         
         if (dropdownContainer.classList.contains('open')) {
-
+            console.log('open');
             barOne.classList.remove('cross-container--clicked-cross-bar-1');
             barTwo.classList.remove('cross-container--clicked-cross-bar-2');
             barThree.classList.remove('cross-container--clicked-cross-bar-3');
 
         } else {
-
+            console.log('close');
             barOne.classList.add('cross-container--clicked-cross-bar-1');
             barTwo.classList.add('cross-container--clicked-cross-bar-2');
             barThree.classList.add('cross-container--clicked-cross-bar-3');
