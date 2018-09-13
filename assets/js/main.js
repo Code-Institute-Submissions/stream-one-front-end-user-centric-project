@@ -3,12 +3,12 @@
     // ADD/REMOVE CLICKED CLASS TO BURGER BARS ON CLICK //
 
     const dropdownContainer = document.getElementById('dropdown');
-    const burgerMenu = document.getElementById('burger-menu'); 
+    //const burgerMenu = document.getElementById('burger-menu'); 
     const barOne = document.getElementById('bar-1');
     const barTwo = document.getElementById('bar-2');
     const barThree = document.getElementById('bar-3');
 
-    burgerMenu.addEventListener('click', () => {
+    dropdownContainer.addEventListener('click', () => {
         
         if (dropdownContainer.classList.contains('open')) {
 
