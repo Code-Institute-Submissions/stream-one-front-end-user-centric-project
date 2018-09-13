@@ -724,8 +724,7 @@
 
 }
 
-.cross-container:hover .cross-bar-2,
-.cross-container:focus .cross-bar-2 {
+.cross-container:hover .cross-bar-2 {
     
     
     width: 80%;
@@ -749,8 +748,7 @@
 
 }
 
-.cross-container:hover .cross-bar-3,
-.cross-container:focus .cross-bar-3 {
+.cross-container:hover .cross-bar-3 {
     
     width: 70%;
     
@@ -766,6 +764,11 @@
 
     width: 80%;
 
+}
+
+.cross-container--clicked-cross-bar-3 {
+
+    width: 70%;
 }
 
 
