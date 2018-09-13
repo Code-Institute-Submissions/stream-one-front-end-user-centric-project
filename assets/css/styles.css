@@ -699,8 +699,7 @@
     
 }
 
-.cross-container:hover .cross-bar-1,
-.cross-container:focus .cross-bar-1 {
+.cross-container:hover .cross-bar-1 {
     
     width: 50%;
     
